@@ -1,0 +1,7 @@
+let x = 5;
+x = x+7;
+console.log("Your X value is:",x);
+
+let y = 8;
+y+=4;
+console.log("Your Y value is:",y);
