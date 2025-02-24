@@ -1,0 +1,9 @@
+let age = 23;
+let status = age > 18 ? "i can vote" : "i can not vote";
+console.log(status);
+//Output:- i can vote
+
+let age = 13;
+let status = age > 18 ? "i can vote" : "i can not vote";
+console.log(status);
+// Output:- i can not vote
