@@ -1,0 +1,11 @@
+let num1 = 5;
+let num2 = 5;
+console.log(num1 === num2);
+//Output:- true
+// The Strict Equality Operator (===) checks both the value and data type of two operands in JavaScript
+
+let num1 = 5;
+let num2 = "5";
+console.log(num1 === num2);
+//Output:- false
+// because num1 is a integer but num2 is a string
