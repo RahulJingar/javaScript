@@ -1,0 +1,39 @@
+let num1 = 7;
+let num2 = 5;
+console.log(num1 > num2);
+//Output:- true
+
+let num1 = 7;
+let num2 = 5;
+console.log(num1 < num2);
+//Output:- false
+
+let num1 = 9;
+let num2 = 7;
+console.log(num1 >= num2);
+//Output:- true
+
+let num1 = 15;
+let num2 = 18;
+console.log(num1 <= num2);
+//Output:- true
+
+let num1 = 3;
+let num2 = 3;
+console.log(num1 == num2);
+Output:- true
+
+let num1 = 3;
+let num2 = 5;
+console.log(num1 == num2);
+//Output:- false
+
+let num1 = 5;
+let num2 = 7;
+console.log(num1 !== num2);
+//Output:- true
+
+let num1 = 5;
+let num2 = 5;
+console.log(num1 !== num2);
+//Output:- false
