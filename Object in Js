@@ -1,0 +1,14 @@
+let rectangle = {
+    hieght:2,
+    breadth:5
+}
+console.log(rectangle)
+
+let rectangle = {
+    hieght:2,
+    breadth:5,
+    draw:function(){
+       console.log("hello mitro") 
+    }
+}
+rectangle.draw()
