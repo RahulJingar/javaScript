@@ -1,0 +1,6 @@
+let x = 2;
+let y = 3;
+let ans = (x|y);
+console.log(ans);
+
+// output is 3
