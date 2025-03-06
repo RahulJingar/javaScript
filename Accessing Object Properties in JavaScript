@@ -1,0 +1,8 @@
+const rectangle = {
+  name:"rahul",
+  class:"javaScipt",
+  gender:"male",
+  city:"ajmer",
+  mobile:"7297998875"
+};
+console.log(rectangle.name)
