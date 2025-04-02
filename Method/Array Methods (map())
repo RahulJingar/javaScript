@@ -1,0 +1,8 @@
+let arr = [7,8,9,10];
+let ans = arr.map(function(num){
+  return 'students ' + num;
+})
+
+console.log(ans);
+
+//output:- ['students 7', 'students 8', 'students 9', 'students 10']
