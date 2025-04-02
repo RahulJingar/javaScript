@@ -4,3 +4,11 @@ let ans = function run(){
 ans();
 
 //output:-  Hello Rahul
+
+
+let stand = function run(){
+    return "Hello Rahul";
+}
+console.log(stand());
+
+//output:-  Hello Rahul
