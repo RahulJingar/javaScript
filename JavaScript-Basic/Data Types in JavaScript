@@ -1,0 +1,45 @@
+String:-
+var str = "Hello World";
+console.log(str);
+
+//output:- Hello World
+
+
+
+Number:-
+var num = 7;
+console.log(num);
+
+//output:- 7
+
+
+
+var num = 12.5;
+console.log(num);
+
+//output:- 12.5
+
+
+
+Boolean:-
+var b = true/false;
+console.log(b);
+
+//output:- Infinity
+
+
+
+Undefined:-
+var a;
+console.log(a);
+
+//output:- undefined
+
+
+
+Null:-
+var a = null;
+console.log(a);
+
+//output:- null
+
