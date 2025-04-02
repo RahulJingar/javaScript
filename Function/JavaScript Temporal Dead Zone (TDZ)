@@ -1,0 +1,6 @@
+ans();
+let ans = function run(){
+    console.log("Hello Rahul");
+}
+
+//output:-  ReferenceError: Cannot access 'ans' before initialization
