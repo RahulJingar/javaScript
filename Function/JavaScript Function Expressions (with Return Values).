@@ -1,0 +1,6 @@
+let ans = function run(){
+    return "Hello Rahul";
+}
+console.log(ans());
+
+//output:-  Hello Rahul
