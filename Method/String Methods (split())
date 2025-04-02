@@ -1,0 +1,12 @@
+// let arr = 'This is my name is Rahul';
+// let result = arr.split('');
+// console.log(result);
+
+//output:- (24) ['T', 'h', 'i', 's', ' ', 'i', 's', ' ', 'm', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'R', 'a', 'h', 'u', 'l']
+
+
+let arr = 'This is my name is Rahul';
+let result = arr.split('_');
+console.log(result);
+
+//output:- (1) ['This is my name is Rahul']
