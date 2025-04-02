@@ -3,3 +3,13 @@ arr.pop();
 console.log(arr);
 
 //output:- [1, 2, 3]
+
+
+let arr = [1,2,3,4];
+while(arr.length)
+{
+  arr.pop();
+}
+console.log(arr);
+
+//output:- []
