@@ -1,0 +1,6 @@
+run();
+function run(){
+    console.log("Hello Rahul");
+}
+
+//output:- Hello Rahul
