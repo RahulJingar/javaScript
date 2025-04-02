@@ -1,9 +1,0 @@
-let a = 5;
-let a = 7;
-console.log(a)
-
-//Uncaught SyntaxError C:\Users\rahul\Desktop\project.js\Normal.js:2
-let a = 7;
-    ^
-
-SyntaxError: Identifier 'a' has already been declared
