@@ -1,7 +1,0 @@
-let person = {
-    name:"Rahul",
-    age:25,
-    city:"Ajmer",
-    Capital:"Rajasthan"
-}
-console.log(person);
