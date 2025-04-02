@@ -1,0 +1,9 @@
+let arr = [
+  {no:1, name:"Rahul"},
+  {no:2, name:"Manish"}
+];
+
+var result = arr.find(a =>a.name === "Rahul")
+console.log(result);
+
+//output:- {no: 1, name: 'Rahul'}
