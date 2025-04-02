@@ -8,3 +8,15 @@ const rectangle = {
   console.log(rectangle.name)
   
 //output:- rahul
+
+
+
+let person = {
+    name:"Rahul",
+    age:25,
+    city:"Ajmer",
+    Capital:"Rajasthan"
+}
+console.log(person);
+
+//output:- {name: 'Rahul', age: 25, city: 'Ajmer', Capital: 'Rajasthan'}
