@@ -1,0 +1,6 @@
+function sum(a,b){
+    console.log(arguments);
+}
+sum(4,5);
+
+//output:- Arguments(2) [4, 5, callee: ƒ, Symbol(Symbol.iterator): ƒ]
