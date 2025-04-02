@@ -1,0 +1,38 @@
+
+let num1 = 7;
+let num2 = 5;
+
+let ans = num1 + num2;
+console.log("Your Addition is:", ans);
+
+//output:- 12
+
+
+ans = num1 - num2;
+console.log("Your Subtraction is:", ans);
+
+// output:- 2
+
+
+ans = num1 * num2;
+console.log("Your Multiplication is:", ans);
+
+// output:- 35
+
+
+ans = num1 / num2;
+console.log("Your Divise is:", ans);
+
+// output:- 1.4
+
+
+ans = num1 % num2;
+console.log("Your Reminder value is:", ans);
+
+//output:- 2
+
+
+ans = num1 ** num2;
+console.log("Double Asterisk:",ans)  
+
+//output:- 16807
