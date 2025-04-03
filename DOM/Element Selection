@@ -46,7 +46,7 @@ HTML:-
       <h1 class="header">Hello World</h1>
     </div>  
 </body>
-<script src="r.js"></script>
+<script src="basic.js"></script>
 </html>
 
 
