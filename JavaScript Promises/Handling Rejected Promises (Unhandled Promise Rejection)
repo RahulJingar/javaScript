@@ -1,0 +1,16 @@
+let myPromise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("i am inside promise");
+    },5000);
+    reject("this product will be issued");
+})
+
+console.log("that is first");
+
+//output:- that is first
+// Uncaught UnhandledPromiseRejection UnhandledPromiseRejection: This error originated either by throwing inside of an async function without a catch block, 
+or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason "this product will be issued".
+// at throwUnhandledRejectionsMode (node:internal/process/promises:392:7)
+// at processPromiseRejections (node:internal/process/promises:475:17)
+// at processTicksAndRejections (node:internal/process/task_queues:106:32)
+// Process exited with code 1
