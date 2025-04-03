@@ -1,0 +1,8 @@
+function a(){
+    const ab = 5;   //local scope
+}
+const ab=5;     //global scope
+
+function b(){
+    const ab=5;     //local scope
+}
