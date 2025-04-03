@@ -1,0 +1,62 @@
+1. Create the id
+HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing & Bubbling</title>
+    
+</head>
+<body>
+    <div>
+      <h1 id="header">Hello World</h1>
+    </div>  
+</body>
+<script src="r.js"></script>
+</html>
+
+
+
+
+jS:-   Access the id
+
+let heading = document.querySelector("#header");
+
+heading.addEventListener("click",function(){
+    console.log("click on the h1 tag");
+})
+
+
+
+2.Create the Class
+HTML:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing & Bubbling</title>
+    
+</head>
+<body>
+    <div>
+      <h1 class="header">Hello World</h1>
+    </div>  
+</body>
+<script src="r.js"></script>
+</html>
+
+
+
+
+jS:- Access the Class
+let heading = document.querySelector(".header");
+
+heading.addEventListener("click",function(){
+    console.log("click on the h1 tag");
+})
+
+
