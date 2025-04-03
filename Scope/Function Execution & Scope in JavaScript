@@ -1,0 +1,27 @@
+function walk(){
+    var a = 5;
+}
+console.log(walk());
+
+//output:- undefined
+
+
+
+
+function walk(){
+    let a = 5;
+}
+console.log(walk());
+
+//output:- undefined
+
+
+
+
+
+function walk(){
+    const a = 5;
+}
+console.log(walk());
+
+//output:- undefined
