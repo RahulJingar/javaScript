@@ -1,0 +1,29 @@
+HTML:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <article id="wrapper">
+    <p>para <span>span</span></p>
+    <p>para <span>span</span></p>
+    <p>para <span>span</span></p>
+   </article>
+</body>
+<script src="basic.js"></script>
+</html>
+
+
+
+jS:-
+let element = document.getElementById('wrapper');
+element.addEventListener("click",function(event){
+    if(event.target.nodeName === 'SPAN'){   //  span is capital
+        console.log('click on the span ' + event.target.textContent)
+    }
+});
+
+
