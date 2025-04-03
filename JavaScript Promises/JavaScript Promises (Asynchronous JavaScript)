@@ -1,0 +1,9 @@
+let newPromise = new Promise(function(resolve,reject){
+    console.log("i am inside promise");
+    resolve(1998);
+})
+
+console.log('pehla')
+
+//output:- i am inside promise
+// pehla
