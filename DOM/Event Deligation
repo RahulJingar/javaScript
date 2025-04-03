@@ -63,3 +63,38 @@ for (let i = 0; i <= 100; i++) {
 }
 document.body.appendChild(myDiv);
 
+
+
+
+HTML:-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Capturing & Bubbling</title>
+  </head>
+  <body>
+    
+  </body>
+  <script src="basic.js"></script>
+</html>
+
+
+
+
+
+jS:-
+let myDiv = document.createElement("div");
+function paraStatus(event) {
+  console.log("para " + event.target.textContent);
+}
+myDiv.addEventListener("click", paraStatus);
+for (let i = 0; i <= 100; i++) {
+  let newElement = document.createElement("p");
+  newElement.textContent = "This is paragraph " + i;
+
+  myDiv.appendChild(newElement);
+}
+document.body.appendChild(myDiv);
+
