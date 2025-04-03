@@ -1,0 +1,27 @@
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        console.log("Hello World");
+    }, 3000);
+    reject(new Error("error aaye hain"));
+});
+
+myPromise.then((value)=>{
+    console.log(value)
+});
+
+myPromise.catch((error)=>{
+    console.log("recieved an error");
+});
+//output:- recieved an error
+// Uncaught Error Error: error aaye hain 
+// at <anonymous> (file:///C:/Users/rahul/Desktop/reactRj/basic.js:5:12)
+// at <anonymous> (file:///C:/Users/rahul/Desktop/reactRj/basic.js:1:17)
+// at <anonymous> (node:internal/modules/cjs/loader:1565:14)
+// at <anonymous> (node:internal/modules/cjs/loader:1708:10)
+// at <anonymous> (node:internal/modules/cjs/loader:1318:32)
+// at <anonymous> (node:internal/modules/cjs/loader:1128:12)
+// at traceSync (node:diagnostics_channel:322:14)
+// at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+// at executeUserEntryPoint (node:internal/modules/run_main:170:5)
+// at <anonymous> (node:internal/main/run_main_module:36:49)
+// Process exited with code 1
