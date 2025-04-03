@@ -1,0 +1,7 @@
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(function() {
+        console.log("Hello World");
+    }, 3000);
+})
+
+//output:- Hello World
