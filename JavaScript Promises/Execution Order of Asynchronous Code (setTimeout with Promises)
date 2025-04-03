@@ -1,0 +1,19 @@
+let myPromise1 = new Promise((resolve, reject) => {
+    setTimeout(function(){
+        console.log("i am the inside in 5 seconds");
+    },5000);
+});
+
+let myPromise2 = new Promise((resolve, reject) => {
+    setTimeout(function(){
+        console.log("i am the inside in 3 seconds");
+    },3000);
+});
+
+
+console.log("Hello World");
+
+
+//output:- Hello World
+// i am the inside in 3 seconds
+// i am the inside in 5 seconds
