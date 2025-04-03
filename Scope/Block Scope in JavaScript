@@ -62,3 +62,33 @@ console.log(a);
 
 
 
+for(let i=0;i<10;i++){
+
+}
+console.log(i);
+
+
+//output:-  ReferenceError: i is not defined
+
+
+
+
+for(const i=0;i<10;i++){
+
+}
+console.log(i);
+
+
+//output:-  TypeError: Assignment to constant variable.
+
+
+
+
+
+for(var i=0;i<10;i++){
+
+}
+console.log(i);
+
+
+//output:-  10
