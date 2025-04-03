@@ -1,0 +1,9 @@
+function otp(){
+    let generatedNumber = Math.random()*4000
+    console.log("random:",generatedNumber)
+        let integerPart = Math.floor(generatedNumber)
+    console.log("floor:",integerPart)
+        let roundedValue = Math.ceil(generatedNumber)
+    console.log("ciel:",roundedValue)
+}
+otp()
