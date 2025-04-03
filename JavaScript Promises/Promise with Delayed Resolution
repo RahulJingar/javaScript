@@ -1,0 +1,11 @@
+let myPromise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("i am inside promise");
+    },5000);
+    resolve(1999);      // fullfilled:- 1999
+})
+
+console.log("that is first");
+
+//output:- that is first
+// i am inside promise
