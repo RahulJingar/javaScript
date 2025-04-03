@@ -1,0 +1,29 @@
+
+let person = {
+    Name:"Rahul Jingar",
+    Course:"Mern Full Stack",
+    City:"Jaipur"
+};
+
+function fullDetails(){
+   return `Hello My Name is ${person.Name}, My course name is ${person.Course} and My city name is ${person.City}`
+}
+console.log(fullDetails())
+//output:- Hello My Name is Rahul Jingar, My course name is Mern Full Stack and My city name is Jaipur
+
+
+
+
+let person = {
+    Name:"Rahul Jingar",
+    Course:"Mern Full Stack",
+    City:"Jaipur"
+};
+
+function fullDetails(){
+   return `Hello My Name is ${person.Name}, My course name is ${person.Course} and My city name is ${person.City}`
+}
+let result = fullDetails();
+console.log(result);
+
+//output:- Hello My Name is Rahul Jingar, My course name is Mern Full Stack and My city name is Jaipur
