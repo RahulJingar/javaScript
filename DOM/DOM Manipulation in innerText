@@ -12,7 +12,7 @@ HTML:-
       <h1 id="heading">Hello World</h1>
     </div>  
 </body>
-<script src="r.js"></script>
+<script src="basic.js"></script>
 </html>
 
 
