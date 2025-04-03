@@ -1,0 +1,18 @@
+let person = {
+    firstName:"Rahul",
+    lastName:"Jingar",
+    get fullName(){
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(val){
+        let parts = val.split(' ');
+        this.firstName = "Manish";
+        this.lastName = "Kumar";
+    }
+}
+
+
+console.log(person.fullName);
+
+//Output:- Rahul Jingar
+
