@@ -4,3 +4,24 @@
 console.log(a);
 
 // output:- ReferenceError: a is not defined
+
+
+
+{
+    const a = 5;
+}
+
+console.log(a);
+
+//output:- ReferenceError: a is not defined
+
+
+
+
+{
+    var a = 5;
+}
+console.log(a);
+
+//output:- 5
+
