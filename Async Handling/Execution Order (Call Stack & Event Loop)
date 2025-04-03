@@ -1,0 +1,15 @@
+setTimeout(function(){
+    console.log("first");
+},3000);
+
+function sync(){
+    console.log("second");
+};
+sync();
+
+console.log("third");
+
+
+//output:- second
+// third
+// first
