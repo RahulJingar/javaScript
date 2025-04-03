@@ -24,3 +24,30 @@ console.log(person.fullName);
 
 //Output:- Rahul Jingar
 
+
+
+let person = {
+    firstName:"Rahul",
+    lastName:"Jingar",
+    get fullName(){
+       return `my name is ${person.firstName} and my last name is ${person.lastName`
+    },
+    set fullName(value){
+        if(typeof value!==String){
+            throw new Error("you have not send a string");
+        }
+        let parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+try{
+    person.fullName = 1;
+}
+
+catch (e){
+    alert(e);
+}
+
+console.log(person.fullName);
+//output:- my name is ${person.firstName} and my last name is ${person.lastName
