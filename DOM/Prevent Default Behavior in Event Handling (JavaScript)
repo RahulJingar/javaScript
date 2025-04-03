@@ -1,0 +1,30 @@
+HTML:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing & Bubbling</title>
+    
+</head>
+<body>
+    <div>
+      <a href="https://www.facebook.com/login.php/">facebook login</a><br>
+      <a href="https://www.instagram.com/accounts/onetap/?next=%2Flogin.php%2F">instagram login</a><br>
+      <a href="https://www.wikipedia.org/">wikipedia</a><br>
+
+    </div>  
+</body>
+<script src="basic.js"></script>
+</html>
+
+
+jS:-
+let links = document.querySelectorAll('a');
+let second = links[1];
+
+
+second.addEventListener('click',function(event){
+    event.preventDefault();
+})
+
