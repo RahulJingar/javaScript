@@ -6,8 +6,8 @@ let person = {
     },
     set fullName(val){
         let parts = val.split(' ');
-        this.firstName = "Manish";
-        this.lastName = "Kumar";
+        this.firstName = parts[0];
+        this.lastName = parts[1];
     }
 }
 
