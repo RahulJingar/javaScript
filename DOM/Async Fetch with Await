@@ -1,0 +1,7 @@
+async function utility() {
+    let content = await fetch('http://jsonplaceholder.typicode.com/posts/1');
+let output = content.json();
+};
+console.log(utility());
+
+// output:- Promise {[[PromiseState]]: 'pending', [[PromiseResult]]: undefined, Symbol(async_id_symbol): 5, Symbol(trigger_async_id_symbol): 1}
