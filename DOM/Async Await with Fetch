@@ -1,0 +1,9 @@
+async function utility() {
+    let content = await fetch('http://jsonplaceholder.typicode.com/posts/1');
+let output = await content.json();       //json:- javaScript object notation
+console.log(output);
+};
+
+utility();
+// output:- {userId: 1, id: 1, title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', body: 'quia et suscipit
+    // suscipit recusandae consequun…m rerum est autem sunt rem eveniet architecto'}
