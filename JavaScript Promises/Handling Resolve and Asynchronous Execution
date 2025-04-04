@@ -1,0 +1,13 @@
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(function(){
+        console.log("i am inside promise");
+    },5000);
+    resolve(2500);
+});
+
+myPromise.then((value)=>{console.log(value)}, (error)=>{console.log("Recieved an Error")});
+
+
+
+//output:- 2500
+// i am inside promise
