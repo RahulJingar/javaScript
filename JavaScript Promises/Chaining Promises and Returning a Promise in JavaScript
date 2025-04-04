@@ -1,0 +1,15 @@
+let waada1 = new Promise(function(resolve, reject) {
+    setTimeout(()=>{
+        console.log("setTimeout started")
+    },2000);
+    resolve(true)
+})
+
+let output = waada1.then(() => {
+    let waada2 = new Promise(function(resolve, reject){
+        resolve("waada2 resolved")
+    });
+    return waada2;
+})
+output.then((value)=>console.log(value));
+
