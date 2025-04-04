@@ -1,0 +1,39 @@
+function init(){
+    let name="rahul";
+    function display(){
+        console.log(name);
+    }
+    display();
+}
+init();
+
+// output:- rahul       that is closure concept
+
+
+
+function init(){
+    const name="rahul";
+    function display(){
+        console.log(name);
+    }
+    display();
+}
+init();
+
+// output:- rahul       that is closure concept
+
+
+
+function init(){
+    var name="rahul";
+    function display(){
+        console.log(name);
+    }
+    display();
+}
+init();
+
+// output:- rahul       that is closure concept
+
+
+
