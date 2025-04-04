@@ -1,0 +1,26 @@
+async function utility() {
+    
+
+let delhiMausam = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("delhi main bahut garmi hain")
+    },2000);
+})
+
+
+let hydrabadMausam = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("hydrabad is cool")
+    },4000);
+})
+
+
+let dM = delhiMausam;
+let hM = hydrabadMausam;
+
+return [dM,hM]
+}
+
+console.log(utility())
+
+//output:- Promise {[[PromiseState]]: 'fulfilled', [[PromiseResult]]: Array(2), Symbol(async_id_symbol): 5, Symbol(trigger_async_id_symbol): 1}
