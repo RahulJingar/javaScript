@@ -1,0 +1,8 @@
+// 
+(function() {
+  var x = 5;
+})();
+console.log(x);
+
+// the output will be referenceError because create a function then will be declare a global variable 
+then will access the out of function so that is not accesible so that's why showing the referenceError x is not defined 

@@ -1,0 +1,13 @@
+
+let x = 5;
+function checkScope() {
+  let x = 10;
+  console.log(x);
+}
+checkScope();
+console.log(x);
+
+
+// the output will be 10,5 because a create a variable and store the the value is 5 
+then will be create a naming function then will be create a variable then will be console the variable in under function
+then will be call the function and console the outer variable then will be print the 10,5

@@ -1,0 +1,9 @@
+
+
+function testArgs(a, b, c) {
+  console.log(arguments[0], arguments[1], arguments[2]);
+}
+testArgs(1, 2);
+
+// the output will be 1,2, undefined because create a naming function and pass the parameter
+his name is a,b,c then will be console the arguments[0],arguments[1],arguments[2] then will be call the function but pass the only 2 arguments so that's why print the 1,2, undefined

@@ -1,0 +1,11 @@
+
+
+let x = 5;
+{
+  let x = 10;
+  console.log(x);
+}
+console.log(x);
+
+// the output will be 10,5 because create a variable and store the value is 5 then 
+create a object and create a variable then will store the value is 10 then will console the variable and out of object console the outer variable so that's why print the 10,5

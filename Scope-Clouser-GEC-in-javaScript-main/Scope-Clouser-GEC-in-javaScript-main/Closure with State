@@ -1,0 +1,13 @@
+
+function createCounter() {
+  let count = 0;
+  return function() {
+    return ++count;
+  };
+}
+const counter = createCounter();
+console.log(counter());
+console.log(counter());
+
+// the output will be 1,2 because create a naming function and declare the variable like that count and store 
+the value is 0 and return the function then will be return the pre-increament count and outer function store a variable then call the function of 2 time 1st time print is 1 and 2nd time print is 2 that's it!!

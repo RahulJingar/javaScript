@@ -1,0 +1,11 @@
+
+function testHoist() {
+  console.log(foo);
+  var foo = 10;
+}
+testHoist();
+
+
+// the output will be undefined because create a naming function then will be console then will be declare a variable 
+of var and store the value is 10 but compile is show the variable but not show the value so that's why print the undefined
+but variable declare to let and const so will be output is reffrence error and show the before initialization

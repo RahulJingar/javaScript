@@ -1,0 +1,15 @@
+
+
+let x = 1;
+function outer() {
+  let x = 2;
+  function inner() {
+    console.log(x);
+  }
+  inner();
+}
+outer();
+
+// the output will be 2 because create a variable and store the value then will create a naming function
+his name is outer then create a variable and store the value is 2 then will be create a naming function his name is inner
+then will console the x in outer function then will be call inner and outer function so that's why is 2

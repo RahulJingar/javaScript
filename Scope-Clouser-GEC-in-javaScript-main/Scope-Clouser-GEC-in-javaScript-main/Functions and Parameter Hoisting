@@ -1,0 +1,11 @@
+
+
+function hoistParam(param) {
+  console.log(param);
+  var param = 20;
+}
+hoistParam(10);
+
+
+// the output will be 10 because create a naming function and pass the parameter name is param then will be console the parameter 
+then will create a same variable and store the value is 20 then will call the function and pass the arguments 10 that is show the 10 that's it!!

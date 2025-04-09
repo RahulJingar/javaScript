@@ -1,0 +1,10 @@
+
+function add(a = 5, b = a * 2) {
+  return a + b;
+}
+console.log(add(3));
+console.log(add());
+
+// the output will be 9,15 because create a function and pass the parameter and assign the default
+value then will be return the 2 parameter the out of function call the function and 1st call is pass the arguments is a value is 3 and b=a*2 
+so thats why print the 9 and 2nd call is normal so that's why print the 15 that's it!!
