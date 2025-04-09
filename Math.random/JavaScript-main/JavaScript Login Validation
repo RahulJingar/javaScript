@@ -1,0 +1,32 @@
+const data={
+    "role":"admin",
+    "email":"rjingarnsd@gmail.com",
+    "password":"Password@123"
+}
+function today(Abc){
+    if(Abc.role === 'admin')
+    {
+        console.log("Access") 
+    }
+    else
+        {
+            console.log("Not Access")
+        }
+        if(Abc.email)
+        {
+            console.log("Email Access")
+        }
+        else
+        {
+            console.log("Not Access")
+        }
+        if(Abc.password==="Password@13")
+        {
+            console.log("Password Access")
+        }
+        else
+        {
+            console.log("Password is not Access")
+        }
+}
+today(data)
