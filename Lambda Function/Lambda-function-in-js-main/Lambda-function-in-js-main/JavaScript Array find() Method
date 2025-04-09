@@ -1,0 +1,8 @@
+let arr = [
+    {no:1, name:"rahul"},
+    {no:2, name:"manish"}
+];
+let res = arr.find(a=>a.name == "rahul");
+console.log(res);
+
+//output: {no: 1, name: 'rahul'}
