@@ -1,4 +1,0 @@
-const sum = (x,y) =>x+y;
-
-const ans = sum(3,7);
-console.log(ans);

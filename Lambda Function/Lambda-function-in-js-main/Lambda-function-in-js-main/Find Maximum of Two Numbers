@@ -1,4 +1,0 @@
-const findMaximum = (x,y) => x > y ? "x is maximum":"y is minimum";
-
-console.log(findMaximum(5,8))
-console.log(findMaximum(8,5))

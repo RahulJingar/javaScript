@@ -1,4 +1,0 @@
-const checkEvenOdd = (x) => x % 2 ==0 ? "even":"odd";
-
-console.log(checkEvenOdd(2))
-console.log(checkEvenOdd(5))
