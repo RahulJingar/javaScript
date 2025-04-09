@@ -1,0 +1,4 @@
+const sqr = (a) =>a*a;
+
+const ans = sqr(5);
+console.log(ans);
