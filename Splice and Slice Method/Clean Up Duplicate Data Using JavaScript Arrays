@@ -1,0 +1,9 @@
+let patients = ["Soham","Rina", "Ayaan", "Soham", "Deep", "Nisha"];
+if(patients.includes("Soham"))
+{
+    const index = patients.indexOf("Soham");
+    patients.splice(index,1);
+}
+console.log(patients);
+
+//output:- ["Rina", "Ayaan", "Soham", "Deep", "Nisha"]
