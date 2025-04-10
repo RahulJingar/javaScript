@@ -1,0 +1,10 @@
+let watchlist = ["Inception", "Interstellar", "Tenet", "Dunkirk"];
+if(watchlist.includes("Tenet"))             // find the element of tenet is avalable or not ??
+{
+    const index = watchlist.indexOf("Tenet");       //check the index of tenet
+    watchlist.splice(index,1);      //remove the element of index
+    watchlist.unshift("Tenet");     //top side added the element
+}
+console.log(watchlist);     //print the result
+
+//output:- ["Tenet", "Inception", "Interstellar", "Dunkirk"];
