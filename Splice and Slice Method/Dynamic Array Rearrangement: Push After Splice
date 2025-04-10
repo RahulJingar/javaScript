@@ -1,0 +1,10 @@
+let leads = ["Google", "Amazon", "Microsoft", "Netflix", "Tesla"];
+if(leads.includes("Netflix"))       // find the netflix is an array is available or not?
+{
+    const index = leads.indexOf("Netflix");        // find the index number of netflix is an array
+    leads.splice(index,1);                          // remove the index element
+    leads.push("Netflix")                            // added the last element of netflix
+}
+console.log(leads);                                     // print the result
+
+//output:-  ['Google', 'Amazon', 'Microsoft', 'Tesla', 'Netflix']
