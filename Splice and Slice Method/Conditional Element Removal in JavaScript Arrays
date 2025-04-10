@@ -1,0 +1,14 @@
+let items = [ "Box D","Box A", "Box B", "Box C", "Box E"];
+if(items.includes("Box C"))             // find the element of Box C in an array
+{
+    const index = items.indexOf("Box C");       // chek the index number of Box C
+    if(items.includes("Box C"))             // find the element of Box D in an array
+    items.splice(index,1);              // remove the element of index and only for one element
+    {
+    const index2 = items.indexOf("Box D");      // chek the index number of Box D
+        items.splice(index2,1)              // remove the index2 only one element is remove
+    }
+}
+console.log(items);         // print the answer
+
+//output:- ['Box A', 'Box B', 'Box E']
