@@ -1,0 +1,10 @@
+let kids = ["Aarav", "Mira", "Kabir", "Nina", "Vivaan"];
+if(kids.includes("Kabir"))              // find the element of kabir is available or not in an array
+{
+    const index = kids.indexOf("Kabir");        // find the index number of kabir in an array
+    kids.splice(index+1,0,"Snack Break");       // go to the index+1 and not remove an array but one more added the Snack Break
+}
+console.log(kids);                              //print the result
+
+
+//output:- ['Aarav', 'Mira', 'Kabir', 'Snack Break', 'Nina', 'Vivaan']
