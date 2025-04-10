@@ -1,0 +1,11 @@
+let transactions = ["Salary", "Groceries", "Electricity", "Dining", "Internet"];
+
+
+    const index = transactions.indexOf("Electricity");      // find the elemet of index number
+    const snapshot = transactions.slice(index,5)            // remove the range of electricity to internet
+
+
+console.log(snapshot);      // print the result
+
+
+// output:- ['Electricity', 'Dining', 'Internet']
