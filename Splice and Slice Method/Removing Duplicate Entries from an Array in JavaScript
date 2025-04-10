@@ -1,0 +1,11 @@
+let courses = ["HTML", "CSS", "JavaScript", "Python","Python", "SQL"];
+
+
+if(courses.includes("Python"))          // find the element of python in an array
+{
+    const index = courses.indexOf("Python");        //find the element index of python
+    courses.splice(index,1);                    //remove the index
+}
+console.log(courses)        //print the all elements
+
+//output:- ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL']
