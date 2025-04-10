@@ -1,0 +1,13 @@
+let cart = ["T-shirt", "Shoes", "Jeans", "Cap"];
+
+
+
+
+if(cart.includes("Shoes"))
+{
+    const index = cart.indexOf("Shoes");
+    cart.splice(index+1,0,"Wallet");
+}
+console.log(cart);
+
+//output:- ['T-shirt', 'Shoes', 'Wallet', 'Jeans', 'Cap']
