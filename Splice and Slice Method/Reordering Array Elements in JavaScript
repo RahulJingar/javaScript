@@ -1,0 +1,15 @@
+
+
+let employees = ["Amit", "Sneha", "Ravi", "John", "Neha"];
+if(employees.includes("John"))	//find the element of in an array
+{
+    const index = employees.indexOf("John") //check the index of an array
+    
+    employees.splice(index,1); //remove the index
+    employees.unshift("John"); //added the top side add the John
+
+
+}
+console.log(employees)	//print the final array
+
+// output:- ['John', 'Amit', 'Sneha', 'Ravi', 'Neha']
