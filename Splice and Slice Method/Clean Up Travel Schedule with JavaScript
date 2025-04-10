@@ -1,0 +1,10 @@
+let itinerary = ["Flight", "Hotel", "Car Rental", "City Tour", "Dinner"];
+if(itinerary.includes("City Tour"))         // find the element of in an array is available or not?
+{
+    const index = itinerary.indexOf("City Tour");       // find the index number is an City Tour
+    itinerary.splice(index,1);                          // remove the index in an City Tour
+}
+console.log(itinerary)              // print the result
+
+
+//output:- ['Flight', 'Hotel', 'Car Rental', 'Dinner']
