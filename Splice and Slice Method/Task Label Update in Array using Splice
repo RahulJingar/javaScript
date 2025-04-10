@@ -1,0 +1,14 @@
+let tasks = ["Meeting", "Report", "Email", "Presentation", "Review"];
+
+
+if(tasks.includes("Email"))         // find the element of Email in an array
+{
+    const index = tasks.indexOf("Email");       // find the index number of Email
+    tasks.splice(index,1,"Client Email");       // remove the Email and added the Client Email
+}
+
+
+console.log(tasks);                             // print the result
+
+
+//output:- ['Meeting', 'Report', 'Client Email', 'Presentation', 'Review']
