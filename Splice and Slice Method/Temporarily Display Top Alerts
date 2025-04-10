@@ -1,0 +1,12 @@
+let alerts = ["Fire", "Earthquake", "Flood", "Tornado", "Storm"];
+
+
+if(alerts.includes("Fire"))     // find the element of fire is an array is available or not ??
+{
+    const index = alerts.indexOf("Fire");       // check the index of fire number
+    const widget = alerts.slice(index,3)        //remove the range of index and 3 elements
+    console.log(widget);                        // print the result  
+};
+
+
+//output:-  ['Fire', 'Earthquake', 'Flood']
