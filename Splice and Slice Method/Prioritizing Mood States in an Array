@@ -1,0 +1,12 @@
+let moods = ["Happy", "Anxious", "Calm", "Stressed", "Content"];
+if(moods.includes("Calm"))          // find the element of an calmm in an array
+{
+    const index = moods.indexOf("Calm");        // find the element of index number is an calm
+    moods.splice(index,1);                      // remove the element of index
+
+
+    moods.unshift("Calm");                      // 1st element will be added in the array
+}
+console.log(moods);                             // print the result
+
+//output:- ['Calm', 'Happy', 'Anxious', 'Stressed', 'Content']
