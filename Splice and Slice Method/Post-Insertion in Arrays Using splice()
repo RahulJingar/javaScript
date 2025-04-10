@@ -1,0 +1,14 @@
+let properties = ["Villa", "Apartment", "Studio", "Penthouse", "Farmhouse"];
+
+
+if(properties.includes("Farmhouse"))    //find the element of Farmhouse in an array
+{
+    const index = properties.indexOf("Farmhouse");      // find the index number of Farmhouse
+    properties.splice(index+1,0,"Luxury Picks");        // added the last element of Luxury Picks
+}
+
+
+console.log(properties);        //print the result
+
+
+//output:- ['Villa', 'Apartment', 'Studio', 'Penthouse', 'Farmhouse', 'Luxury Picks']
