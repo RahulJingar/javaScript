@@ -1,0 +1,12 @@
+let subjects = ["Math", "Science", "English", "History", "Geography"];
+if(subjects.includes("Science"))        // check it science is available or not ?
+{
+    const index = subjects.indexOf("Science");      //chek the index of science
+    subjects.splice(index,0,"Revised Science");     //no remove only added the revised science
+}
+
+
+console.log(subjects);      //print the result
+
+
+//output:- ["Math", "Revised Science", "English", "History", "Geography"];
