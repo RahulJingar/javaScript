@@ -1,0 +1,18 @@
+const time = ['09:00', '13:00', '18:30']; 
+const hr = time.map(
+    t => {
+        h = t.slice(0,2);
+        m = t.slice(3);
+
+        const suffix = h >= 12 ? "PM" : "AM";
+
+        if(h>12)
+        {
+            h = h%12;
+        }
+        return `${h}:${m} ${suffix}`
+    }
+)
+console.log(hr);
+
+//Output:- ['9:00 AM', '1:00 PM', '6:30 PM']
