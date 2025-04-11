@@ -1,0 +1,10 @@
+const fruits = ["apple", "banana", "kiwi", "mango"];    // store the array in multiple element
+
+fruits.forEach(             // use the method of forEach that is work but no return type like that void function
+    fruit =>console.log(fruit)          // that is lambda method and pass the parameter like that fruit then will console the fruit 
+)                                       // it will be show the result in one by one
+
+// output:-  apple
+// banana
+// kiwi
+// mango
