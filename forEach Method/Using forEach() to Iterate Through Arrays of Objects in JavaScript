@@ -1,0 +1,11 @@
+const orders = [ 
+    { id: 1, value: 2500 }, 
+    { id: 2, value: 3200 } 
+  ]; 
+  orders.forEach(
+    (o) => console.log(`Order ${o.id} logged. Value: ₹${o.value}`)
+); 
+  
+
+//output:- Order 1 logged. Value: ₹2500
+// Order 2 logged. Value: ₹3200
