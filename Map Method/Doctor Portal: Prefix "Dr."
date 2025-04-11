@@ -1,0 +1,9 @@
+const doctors = ['Singh', 'Verma', 'Chatterjee'];
+
+doctors.map(
+    doctor => console.log(`Dr. ${doctor}`)
+);
+
+//Output:- Dr. Singh
+// Dr. Verma
+// Dr. Chatterjee
