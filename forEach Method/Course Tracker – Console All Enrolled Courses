@@ -1,0 +1,8 @@
+const courses = ["React", "Data Structures", "System Design"]; 
+courses.forEach(
+    c => console.log(`Course enrolled: ${c}`)
+);
+
+//Output:- Course enrolled: React
+// Course enrolled: Data Structures
+// Course enrolled: System Design
