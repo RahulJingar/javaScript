@@ -1,0 +1,9 @@
+const bills = [1000, 1500, 2000]; 
+
+bills.map(
+    (bill) => console.log(bill * 1.18)
+);
+
+//Output:- 1180
+// 1770
+// 2360
