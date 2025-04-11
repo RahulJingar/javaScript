@@ -1,0 +1,9 @@
+const students = ["Ayan", "Neha", "Tushar"]; 
+
+students.forEach(
+    (student) => console.log(`${student} please submit your assignment in tommorow because tomorrow is last date then will be fine for all student`)
+);
+
+// Output:- Ayan please submit your assignment in tommorow because tomorrow is last date then will be fine for all student
+// Neha please submit your assignment in tommorow because tomorrow is last date then will be fine for all student
+// Tushar please submit your assignment in tommorow because tomorrow is last date then will be fine for all student
