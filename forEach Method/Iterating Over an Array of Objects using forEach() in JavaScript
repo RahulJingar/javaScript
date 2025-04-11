@@ -1,0 +1,10 @@
+const reminders = [ 
+    { name: "Ravi", medicine: "Paracetamol" }, 
+    { name: "Tina", medicine: "Antacid" } 
+  ]; 
+reminders.forEach(
+    (r) => console.log(`Patient name is ${r.name} and he is take the medicine ${r.medicine}`)
+);
+
+//Output:- Patient name is Ravi and he is take the medicine Paracetamol
+// Patient name is Tina and he is take the medicine Antacid
