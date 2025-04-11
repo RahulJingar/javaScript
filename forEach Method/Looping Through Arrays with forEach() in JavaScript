@@ -1,0 +1,8 @@
+const doctors = ["Dr. Sharma", "Dr. Bose"]; 
+
+doctors.forEach(
+    (dr) => console.log(`Cardiology Dr. Name is ${dr}`)
+);
+
+//output:- Cardiology Dr. Name is Dr. Sharma
+// Cardiology Dr. Name is Dr. Bose
