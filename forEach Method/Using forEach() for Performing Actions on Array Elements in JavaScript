@@ -1,0 +1,13 @@
+const emplyees = ["rahuljingar@gmail.com","rjingarnsd@gmail.com","manishjingar@gmail.com","harshvardhan@gmail.com"];
+
+emplyees.forEach(           // using to forEach Method
+email => console.log(`sending email to ${email}`)       // pass the parameter hos name is email then will console the email then will       
+                                                        //print the output will be show in the global scope
+);
+
+
+
+//output:- sending email to rahuljingar@gmail.com
+// sending email to rjingarnsd@gmail.com
+// sending email to manishjingar@gmail.com
+// sending email to harshvardhan@gmail.com
