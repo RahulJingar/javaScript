@@ -1,0 +1,9 @@
+const employees = ['raj', 'neha', 'amit']; 
+
+employees.map(
+    employee => console.log(employee.charAt(0).toUpperCase() + employee.slice(1))
+);
+
+//Output:- Raj
+// Neha
+// Amit
