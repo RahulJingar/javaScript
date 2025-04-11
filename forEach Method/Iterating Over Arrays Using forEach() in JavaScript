@@ -1,0 +1,8 @@
+const patients = ["9876543210", "9123456780"];
+patients.forEach(
+    (p) =>console.log(`Patient Contact Number:${p}`)
+);
+
+
+//output:- Patient Contact Number:9876543210
+// Patient Contact Number:9123456780
