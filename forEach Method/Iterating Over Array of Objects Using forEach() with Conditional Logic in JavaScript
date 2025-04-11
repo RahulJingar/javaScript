@@ -1,0 +1,13 @@
+const entries = [ 
+    { name: "Rita", late: true }, 
+    { name: "Ajay", late: false }, 
+    { name: "Zara", late: true } 
+  ]; 
+entries.forEach(
+    (entry) => {
+        if(entry.late) console.log(`Late entry logged for ${entry.name}`)
+    }
+);
+
+//Output:- Late entry logged for Rita
+// Late entry logged for Zara
