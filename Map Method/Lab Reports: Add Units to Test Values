@@ -1,0 +1,10 @@
+const testResults = [85, 120, 140];
+
+testResults.map(
+    test => console.log(`${test} mg/dL`)
+);
+
+
+//Output:- 85 mg/dL
+// 120 mg/dL
+// 140 mg/dL
