@@ -1,0 +1,9 @@
+const rooms = [101, 102, 103]; 
+rooms.forEach(
+    r => console.log(`Room ${r} marked for clean`)
+); 
+//Output:- Room 101 marked for clean
+// Room 102 marked for clean
+// Room 103 marked for clean
+
+  
