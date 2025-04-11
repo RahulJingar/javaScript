@@ -1,0 +1,8 @@
+const actions = ["login", "viewed report", "logout"]; 
+actions.forEach(
+    (act) => console.log(`action is :${act}`)
+);
+
+//Output:- action is :login
+// action is :viewed report
+// action is :logout
