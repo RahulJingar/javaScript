@@ -1,0 +1,7 @@
+
+const slots = ['10:00', '14:00']; 
+const typedSlots = slots.map(time => ({ time, type: 'General Consultation' })); 
+  
+console.log(typedSlots);
+
+//Output:- (2) [{…}, {…}]
