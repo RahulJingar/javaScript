@@ -1,0 +1,8 @@
+
+
+const patients = [25, 60, 45]; 
+const patientAges = patients.map(age => `Age: ${age} yrs`);
+
+console.log(patientAges);
+
+//Output:- (3) ['Age: 25 yrs', 'Age: 60 yrs', 'Age: 45 yrs']
