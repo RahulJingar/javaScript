@@ -1,0 +1,9 @@
+
+
+const staff = ['Nurse A', 'Nurse B']; 
+const attendance = staff.map(name => ({ name, present: true })); 
+
+console.log(attendance);
+
+//Output:-  [{…}, {…}]
+  
