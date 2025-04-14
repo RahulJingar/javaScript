@@ -1,0 +1,11 @@
+let student = {
+    name: "Rahul",
+    age:25,
+    grade:90,
+    address:"Jaipur",
+    phone_no: 7297998875
+}
+
+console.log(student);
+
+//Output:- {name: 'Rahul', age: 25, grade: 90, address: 'Jaipur', phone_no: 7297998875}
