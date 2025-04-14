@@ -1,0 +1,7 @@
+
+
+const medicines = ['Paracetamol', 'Ibuprofen']; 
+const alertList = medicines.map(med => `${med} - Check expiry date`); 
+console.log(alertList);
+
+//Output:- (2) ['Paracetamol - Check expiry date', 'Ibuprofen - Check expiry date']
