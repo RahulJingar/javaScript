@@ -1,0 +1,8 @@
+
+
+const roomNumbers = [101, 102, 103]; 
+const roomLabels = roomNumbers.map(num => `Surgery Room #${num}`); 
+
+console.log(roomLabels);
+
+//Output:- (3) ['Surgery Room #101', 'Surgery Room #102', 'Surgery Room #103']
