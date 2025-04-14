@@ -1,0 +1,8 @@
+
+const doctors = ['Dr. Mehta', 'Dr. Paul']; 
+const statusList = doctors.map(name => ({ name, available: true })); 
+  
+console.log(statusList);
+
+//Output:- (2) [{…}, {…}]
+ 
