@@ -1,0 +1,21 @@
+1.
+const names = ['Ravi Kumar', 'Nidhi Das']; 
+const emails = names.map(name => name.toLowerCase().replace(' ', '.') + '@hospital.com'); 
+ 
+console.log(emails);
+
+//Output:- (2) ['ravi.kumar@hospital.com', 'nidhi.das@hospital.com']
+
+
+2.
+const names = ['Ravi Kumar', 'Nidhi Das']; 
+const name = "Ravi Kumar";
+
+let arr = names.map(
+    name => name.split(" ")[0].toLowerCase() + "@hospital.com"
+);
+
+ 
+console.log(arr);
+
+//Output:- (2) ['ravi.kumar@hospital.com', 'nidhi.das@hospital.com']
