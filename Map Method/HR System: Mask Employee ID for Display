@@ -1,0 +1,7 @@
+
+const employeeIds = ['EMP1234', 'EMP5678']; 
+const maskedIds = employeeIds.map(id => id.slice(0, 3) + '****'); 
+  
+console.log(maskedIds);
+
+//Output:- (2) ['EMP****', 'EMP****']
