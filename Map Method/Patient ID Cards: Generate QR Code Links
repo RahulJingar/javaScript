@@ -1,0 +1,8 @@
+ 
+
+const patientIds = [123, 456, 789]; 
+const qrLinks = patientIds.map(id => `https://hospital.com/qr/${id}`);
+
+console.log(qrLinks);
+
+//Output:- (3) ['https://hospital.com/qr/123', 'https://hospital.com/qr/456', 'https://hospital.com/qr/789']
