@@ -1,0 +1,7 @@
+
+const bpReadings = [120, 130, 140]; 
+const bpLabels = bpReadings.map(val => `${val} mmHg`); 
+
+console.log(bpLabels);
+
+//Output:- (3) ['120 mmHg', '130 mmHg', '140 mmHg']
