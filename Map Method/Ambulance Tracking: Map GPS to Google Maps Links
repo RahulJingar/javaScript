@@ -1,0 +1,14 @@
+
+const coordinates = [ 
+  { lat: 26.91, lng: 75.78 }, 
+  { lat: 26.85, lng: 75.80 } 
+]; 
+const mapLinks = coordinates.map(coord =>  
+  `https://maps.google.com/?q=${coord.lat},${coord.lng}` 
+); 
+
+console.log(mapLinks);
+
+//Output:- (2) ['https://maps.google.com/?q=26.91,75.78', 'https://maps.google.com/?q=26.85,75.8']
+
+  
