@@ -1,0 +1,7 @@
+const testNames = ['Glucose', 'Hemoglobin']; 
+const testCodes = testNames.map(name => `${name} [TST-${name.length * 10}]`);
+
+console.log(testCodes);                 // using the map method 
+
+
+//Output:- (2) ['Glucose [TST-70]', 'Hemoglobin [TST-100]']
