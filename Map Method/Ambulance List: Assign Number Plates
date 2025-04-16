@@ -1,0 +1,8 @@
+
+const vehicles = ['Amb1', 'Amb2']; 
+const plates = vehicles.map((v, i) => `${v} [RJ-14-${1000 + i}]`); 
+
+ 
+console.log(plates);
+
+//Output:- (2) ['Amb1 [RJ-14-1000]', 'Amb2 [RJ-14-1001]']
