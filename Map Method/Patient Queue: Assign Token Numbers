@@ -1,0 +1,8 @@
+
+const patientNames = ['Sita', 'Ram', 'Lakshman']; 
+const tokens = patientNames.map((name, index) => ({ name, token: index + 1 })); 
+
+ console.log(tokens);
+
+
+ //Output:- (3) [{…}, {…}, {…}]
