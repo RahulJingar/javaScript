@@ -1,0 +1,7 @@
+
+const phones = ['9876543210', '9123456789']; 
+const masked = phones.map(ph => `${ph.slice(0, 3)}****${ph.slice(-2)}`); 
+ 
+console.log(masked);
+
+//Output:- (2) ['987****10', '912****89']
