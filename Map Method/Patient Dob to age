@@ -1,0 +1,10 @@
+
+const dobs = [1990, 1985]; 
+
+const currentYear = new Date().getFullYear(); 
+
+const ages = dobs.map(dob => currentYear - dob); 
+
+ console.log(ages);
+
+ //Output:- (2) [35, 40]
