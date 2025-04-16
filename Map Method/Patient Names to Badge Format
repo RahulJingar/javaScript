@@ -1,0 +1,7 @@
+
+const names = ['Ajay', 'Priya']; 
+const badges = names.map(name => `👤 ${name}`);
+
+console.log(badges);
+
+//Output:- (2) ['👤 Ajay', '👤 Priya']
