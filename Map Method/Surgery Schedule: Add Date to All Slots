@@ -1,0 +1,8 @@
+
+
+const slots = ['09:00', '11:00']; 
+const datedSlots = slots.map(time => `${time} on 2025-04-12`);
+
+console.log(datedSlots);
+
+//Output:- (2) ['09:00 on 2025-04-12', '11:00 on 2025-04-12']
