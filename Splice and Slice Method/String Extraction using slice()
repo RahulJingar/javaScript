@@ -1,0 +1,6 @@
+
+const word = "Javascript";
+const res = word.slice(4,7);
+console.log(res);
+
+//Output:- scr
