@@ -1,0 +1,7 @@
+const students = ['Prajjal', 'Pooja', 'Aryan', 'Riya', 'Neha'];
+
+const student = students.slice(2,5);
+student.reverse();
+console.log(student);
+
+//Output:- (3) ['Neha', 'Riya', 'Aryan']
