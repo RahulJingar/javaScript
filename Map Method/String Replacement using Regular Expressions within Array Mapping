@@ -1,0 +1,9 @@
+const names = ['Ankit', 'Isha', 'Uday'];
+
+const replacedNames = names.map(name =>
+  name.replace(/[aeiouAEIOU]/g, '*')
+);
+
+console.log(replacedNames);
+
+//Output:- (3) ['*nk*t', '*sh*', '*d*y']
