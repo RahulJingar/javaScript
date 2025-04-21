@@ -1,0 +1,5 @@
+const letters = ['a', 'b', 'c', 'd', 'e'];
+letters.splice(1,2);
+console.log(letters);
+
+//Output:- (3) ['a', 'd', 'e']
