@@ -1,0 +1,7 @@
+const names = ['Alice', 'Bob', 'Charlie', 'David'];
+
+const indexedNames = names.map((name, index) => `${index + 1}. ${name}`);
+
+console.log(indexedNames);
+
+//Output:- (4) ['1. Alice', '2. Bob', '3. Charlie', '4. David']
