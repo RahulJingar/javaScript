@@ -1,0 +1,5 @@
+const numbers = [10, 20, 30, 40, 50, 60];
+const number = numbers.slice(0,4);
+console.log(number);
+
+//Output:- (4) [10, 20, 30, 40]
