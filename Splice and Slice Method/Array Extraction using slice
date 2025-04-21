@@ -1,0 +1,5 @@
+const ids = [101, 102, 103, 104];
+const res = ids.slice(2,4);
+console.log(res);
+
+//Output:- (2) [103, 104]
