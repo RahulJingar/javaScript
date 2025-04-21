@@ -1,0 +1,6 @@
+const queue = ['Second', 'Third', 'Fourth','First']
+const abc = queue.filter(q=>q!='First');
+abc.unshift('First')
+console.log(abc);
+
+//Output:- (4) ['First', 'Second', 'Third', 'Fourth']
