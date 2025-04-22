@@ -1,0 +1,22 @@
+1.
+
+const staff = [{ name: 'Dev', resigned: false }, 
+
+ { name: 'Riya', resigned: true }];
+ 
+const workingStaff = staff.filter(s => !s.resigned);
+console.log(workingStaff);
+
+//Output:- [{ name: 'Dev', resigned: false }]
+
+
+2.
+
+const staff = [{ name: 'Dev', resigned: false }, 
+
+ { name: 'Riya', resigned: true }];
+ 
+const workingStaff = staff.filter(s => s.resigned == false);
+console.log(workingStaff);
+
+//Output:- [{ name: 'Dev', resigned: false }]
