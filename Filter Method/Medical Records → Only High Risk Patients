@@ -1,0 +1,9 @@
+
+const records = [{ name: 'Ali', risk: 'high' },  
+
+{ name: 'Ravi', risk: 'low' }];
+
+const medicalRecords = records.filter(r => r.risk == 'high');
+console.log(medicalRecords);
+
+// Output:- [{ name: 'Ali', risk: 'high' }]
