@@ -1,0 +1,19 @@
+1.
+const feedbacks = ['Great service', 'Doctor was rude', 'Billing issue']; 
+
+const fee = feedbacks.filter(fb => fb.toLowerCase().includes('rude') || fb.toLowerCase().includes('issue'));
+
+console.log(fee);
+
+//Output:- [ 'Doctor was rude', 'Billing issue' ]
+
+
+
+2.
+const feedbacks = ['Great service', 'Doctor was rude', 'Billing issue']; 
+
+const fee = feedbacks.filter(fb => fb.includes('rude') || fb.includes('issue'));
+
+console.log(fee);
+
+//Output:- [ 'Doctor was rude', 'Billing issue' ]
