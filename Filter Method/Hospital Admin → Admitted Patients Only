@@ -1,0 +1,9 @@
+
+const patients = [{ name: 'Ravi', admitted: true }, 
+
+ { name: 'Sita', admitted: false }]; 
+const admittedPatients = patients.filter(p => p.admitted); 
+
+console.log(admittedPatients);
+
+//Output:- [ { name: 'Ravi', admitted: true } ]
