@@ -1,0 +1,9 @@
+
+const appointments = [{ time: '2025-04-01' },  
+
+{ time: '2025-04-30' }]; 
+const upcoming = appointments.filter(a => new Date(a.time) > new Date());
+
+console.log(upcoming);
+
+//Output:- [ { time: '2025-04-30' } ]
