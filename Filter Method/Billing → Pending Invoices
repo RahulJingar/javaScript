@@ -1,0 +1,21 @@
+1.
+
+ const bills = [{ id: 1, paid: true },  
+
+ { id: 2, paid: false }];
+ const bill = bills.filter(b => b.paid == false);
+ console.log(bill);
+
+//Output:- [ { id: 2, paid: false } ]
+
+
+
+2.
+const bills = [{ id: 1, paid: true },  
+
+{ id: 2, paid: false }];
+
+const bill = bills.filter(b => !b.paid);
+console.log(bill);
+
+//Output:- [ { id: 2, paid: false } ]
