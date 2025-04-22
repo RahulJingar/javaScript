@@ -1,0 +1,9 @@
+
+const profiles = [{ name: 'Dr. Bose', verified: true }, 
+
+ { name: 'Dr. Das', verified: false }];
+ 
+const profile =  profiles.filter(p => p.verified);
+console.log(profile);
+
+//Output:- [{ name: 'Dr. Bose', verified: true }]
