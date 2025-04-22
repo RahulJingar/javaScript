@@ -1,0 +1,9 @@
+
+const calls = [{ type: 'general' },  
+
+{ type: 'emergency' }];
+
+const emergencyCall = calls.filter(c => c.type == 'emergency');
+console.log(emergencyCall);
+
+//Output:- [{ type: 'emergency' }]
