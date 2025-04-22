@@ -1,0 +1,9 @@
+
+const staff = [{ name: 'Pooja', dept: 'ICU' }, 
+
+ { name: 'Suresh', dept: 'OPD' }];
+ 
+const result = staff.filter(s => s.dept == 'ICU');
+console.log(result);
+
+//Output:- [ { name: 'Pooja', dept: 'ICU' } ]
