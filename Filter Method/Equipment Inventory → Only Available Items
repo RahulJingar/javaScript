@@ -1,0 +1,9 @@
+
+const items = [{ name: 'ECG', available: true },  
+
+{ name: 'MRI', available: false }];
+
+const Inventory = items.filter(i => i.available);
+console.log(Inventory);
+
+//Output:- [ { name: 'ECG', available: true } ]
