@@ -1,0 +1,9 @@
+
+const patients = [{ name: 'Karan', age: 65 }, 
+
+ { name: 'Reema', age: 45 }];
+ 
+const patient = patients.filter(p => p.age>60);
+console.log(patient);
+
+//Output:- [{ name: 'Karan', age: 65 }]
