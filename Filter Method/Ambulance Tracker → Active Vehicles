@@ -1,0 +1,20 @@
+1.
+ const vehicles = [{ id: 'A1', active: true },  
+
+ { id: 'A2', active: false }];
+
+ const Tracker = vehicles.filter(v => v.active);
+ console.log(Tracker);
+
+//Output:- [{ id: 'A1', active: true }]
+
+
+2.
+const vehicles = [{ id: 'A1', active: true },  
+
+{ id: 'A2', active: false }];
+
+const Tracker = vehicles.filter(v => v.active == true);
+console.log(Tracker);
+
+//Output:- [{ id: 'A1', active: true }]
