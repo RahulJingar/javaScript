@@ -1,0 +1,10 @@
+
+const results = [{ test: 'Glucose', value: 180 },  
+
+{ test: 'BP', value: 120 }];
+
+const test = results.filter(r => r.value>140);
+
+console.log(test);
+
+// Output:- [ { test: 'Glucose', value: 180 } ]
