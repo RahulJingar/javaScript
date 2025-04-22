@@ -1,0 +1,11 @@
+
+const doctors = [{ name: 'Dr. Roy',  
+
+specialty: 'Cardiologist' }, { name: 'Dr. Khan',  
+
+specialty: 'Dermatologist' }];
+
+const dr = doctors.filter(d => d.specialty == 'Cardiologist')
+console.log(dr);
+
+Output:- [ { name: 'Dr. Roy', specialty: 'Cardiologist' } ]
