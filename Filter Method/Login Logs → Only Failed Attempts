@@ -1,0 +1,21 @@
+1.
+ const logs = [{ user: 'admin', success: true },  
+
+ { user: 'guest', success: false }];
+
+ const failledLogin = logs.filter(l => !l.success);
+ console.log(failledLogin);
+
+//Output:- [ { user: 'guest', success: false } ]
+
+
+2.
+const logs = [{ user: 'admin', success: true },  
+
+{ user: 'guest', success: false }];
+
+const failledLogin = logs.filter(l => l.success == false);
+console.log(failledLogin);
+
+
+//Output:- [ { user: 'guest', success: false } ]
