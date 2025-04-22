@@ -1,0 +1,10 @@
+
+const nurses = [{ name: 'Anu', shift: 'night' },  
+
+{ name: 'Rani', shift: 'day' }];
+
+const nurse = nurses.filter(n => n.shift == 'night');
+
+console.log(nurse);
+
+// Output:- [ { name: 'Anu', shift: 'night' } ]
