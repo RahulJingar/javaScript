@@ -1,0 +1,21 @@
+1.
+ const meds = [{ name: 'Paracetamol', expired: false }, 
+
+  { name: 'Insulin', expired: true }];
+ 
+ const nonExpired = meds.filter(m => m.expired == false);
+
+ console.log(nonExpired);
+
+//Output:- [ { name: 'Paracetamol', expired: false } ]
+
+2.
+const meds = [{ name: 'Paracetamol', expired: false }, 
+
+ { name: 'Insulin', expired: true }];
+ 
+const nonExpired = meds.filter(m => !m.expired);
+
+console.log(nonExpired);
+
+//Output:- [ { name: 'Paracetamol', expired: false } ]
