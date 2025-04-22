@@ -1,0 +1,23 @@
+1.
+const tests = [{ test: 'Thyroid', report: true }, 
+
+ { test: 'Cholesterol', report: false }];
+ 
+const test =  tests.filter(t => !t.report);
+console.log(test);
+
+// Output:- [ { test: 'Cholesterol', report: false } ]
+
+
+2.
+//  19. Lab → Only Tests with Missing Reports 
+
+const tests = [{ test: 'Thyroid', report: true }, 
+
+ { test: 'Cholesterol', report: false }];
+ 
+const test =  tests.filter(t => t.report == false);
+console.log(test);
+
+// Output:- [ { test: 'Cholesterol', report: false } ]
+
