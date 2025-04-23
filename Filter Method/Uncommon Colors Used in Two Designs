@@ -1,0 +1,21 @@
+1.
+const design1 = ['Red', 'Blue', 'Green']; 
+const design2 = ['Blue', 'Yellow']; 
+
+const uncommon1 = design1.filter(d => !design2.includes(d));
+const uncommon2 = design2.filter(d => !design1.includes(d));
+
+const uncommon = uncommon1.concat(uncommon2);
+console.log(uncommon);
+
+//Output:- [ 'Red', 'Green', 'Yellow' ]
+
+
+2.
+const design1 = ['Red', 'Blue', 'Green']; 
+const design2 = ['Blue', 'Yellow']; 
+
+const uncommon = [...design1.filter(d => !design2.includes(d)), ...design2.filter(d => !design1.includes(d))];
+console.log(uncommon);
+
+//Output:- [ 'Red', 'Green', 'Yellow' ]
