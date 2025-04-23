@@ -1,0 +1,9 @@
+
+const candidates = [{ name: 'Vikram', exp: 6 }, 
+
+ { name: 'Rashi', exp: 3 }];
+ 
+const moreThanFiveYearExperience = candidates.filter(c => c.exp>5);
+console.log(moreThanFiveYearExperience);
+
+//Output:- [ { name: 'Vikram', exp: 6 } ]
