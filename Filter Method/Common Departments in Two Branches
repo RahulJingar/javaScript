@@ -1,0 +1,8 @@
+
+const dept1 = ['HR', 'Finance', 'IT']; 
+const dept2 = ['Finance', 'Admin', 'IT']
+
+const common = dept1.filter(d => dept2.includes(d));
+console.log(common);
+
+//Output:- [ 'Finance', 'IT' ]
