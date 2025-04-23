@@ -1,0 +1,15 @@
+
+ const surgeries = [{ id: 1, done: true }, { id: 2, done: false }];
+
+ const surgeryList = surgeries.filter(s => s.done);
+ console.log(surgeryList);
+
+//Output:- [{ id: 1, done: true }
+
+
+
+const surgeries = [{ id: 1, done: true }, { id: 2, done: false }];
+const surgeryList = surgeries.filter(s => s.done == true);
+console.log(surgeryList);
+
+//Output:- [{ id: 1, done: true }
