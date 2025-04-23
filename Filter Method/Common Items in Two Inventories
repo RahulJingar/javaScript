@@ -1,0 +1,8 @@
+
+const inventory1 = ['Pen', 'Notebook', 'Ruler']; 
+const inventory2 = ['Notebook', 'Eraser']; 
+
+const common = inventory1.filter(i => inventory2.includes(i));
+console.log(common);
+
+//Output:- [ 'Notebook' ]
