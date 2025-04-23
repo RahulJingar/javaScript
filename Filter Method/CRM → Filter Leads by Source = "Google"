@@ -1,0 +1,10 @@
+
+const leads = [{ name: 'Ashish', source: 'Google' },  
+
+{ name: 'Piya', source: 'Referral' }];
+
+const Crm = leads.filter(l => l.source == 'Google');
+
+console.log(Crm);
+
+//Output:- [{ name: 'Ashish', source: 'Google' }
