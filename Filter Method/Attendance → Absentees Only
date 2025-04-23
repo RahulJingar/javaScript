@@ -1,0 +1,18 @@
+
+ const logs = [{ name: 'Ravi', present: true }, { name: 'Neel', present: false }];
+
+ const absence = logs.filter(l => !l.present);
+
+ console.log(absence);
+
+//Output:- [ { name: 'Neel', present: false } ]
+
+
+
+const logs = [{ name: 'Ravi', present: true }, { name: 'Neel', present: false }];
+
+const absence = logs.filter(l => l.present == false);
+
+console.log(absence);
+
+//Output:- [ { name: 'Neel', present: false } ]
