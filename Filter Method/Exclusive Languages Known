@@ -1,0 +1,22 @@
+1.
+const lang1 = ['Hindi', 'English', 'French']; 
+const lang2 = ['English', 'German']; 
+
+ const language1 = lang1.filter(l => !lang2.includes(l));
+ const language2 = lang2.filter(l => !lang1.includes(l));
+
+ const language = language1.concat(language2)
+
+ console.log(language);
+
+//Output:- [ 'Hindi', 'French', 'German' ]
+
+2.
+const lang1 = ['Hindi', 'English', 'French']; 
+const lang2 = ['English', 'German']; 
+const language = [...lang1.filter(l => !lang2.includes(l)), ...lang2.filter(l => !lang1.includes(l))
+];
+
+console.log(language);
+
+//Output:- [ 'Hindi', 'French', 'German' ]
