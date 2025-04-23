@@ -1,0 +1,7 @@
+
+const products = [{ name: 'iPhone', stock: 0 }, { name: 'Watch', stock: 10 }];
+
+const itemOutOfStock = products.filter(p => p.stock === 0);
+console.log(itemOutOfStock);
+
+//Output:- [{ name: 'iPhone', stock: 0 }]
