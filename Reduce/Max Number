@@ -1,0 +1,7 @@
+
+const values = [10, 45, 23, 89]; 
+const max = values.reduce((acc, val) => val ? val:acc);
+
+console.log(max);
+
+//Output:- 89
