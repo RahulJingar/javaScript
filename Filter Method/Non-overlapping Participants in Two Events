@@ -1,0 +1,24 @@
+1.
+
+const event1 = ['Amit', 'Neha', 'Ravi']; 
+const event2 = ['Neha', 'Sonia'];
+
+const uncommon = event1.filter(e => !event2.includes(e));
+const unCommon = event2.filter(e =>!event1.includes(e));
+const ans = uncommon.concat(unCommon);
+console.log(ans);
+
+// Output:- [ 'Amit', 'Ravi', 'Sonia' ]
+
+
+2.
+ 
+
+const event1 = ['Amit', 'Neha', 'Ravi']; 
+const event2 = ['Neha', 'Sonia']; 
+const nonCommonParticipants = [...event1.filter(p => !event2.includes(p)), ...event2.filter(p => !event1.includes(p))]; 
+
+
+console.log(nonCommonParticipants);
+
+// Output:- [ 'Amit', 'Ravi', 'Sonia' ]
