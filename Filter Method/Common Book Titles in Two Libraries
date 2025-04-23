@@ -1,0 +1,9 @@
+ 
+
+const libA = ['Gita', 'Ramayana', 'Mahabharata']; 
+const libB = ['Mahabharata', 'Quran'];
+
+const common = libA.filter(l => libB.includes(l));
+console.log(common);
+
+//Output:- [ 'Mahabharata' ]
