@@ -1,0 +1,10 @@
+
+const t1 = ['History', 'Geography', 'Civics']; 
+const t2 = ['Civics', 'Economics'];
+
+const commonSubjects = t1.filter(t => t2.includes(t));
+console.log(commonSubjects);
+
+//Output:- [ 'Civics' ]
+
+
