@@ -1,0 +1,9 @@
+1.
+
+const doctor1 = ['Paracetamol', 'Amoxicillin']; 
+const doctor2 = ['Ibuprofen', 'Paracetamol'];
+
+const Common = doctor1.filter(d => doctor2.includes(d));
+console.log(Common);
+
+//Output:- [ 'Paracetamol' ]
