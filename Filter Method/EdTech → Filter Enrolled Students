@@ -1,0 +1,18 @@
+
+ const users = [ 
+  { name: 'Jay', enrolled: true }, { name: 'Raj', enrolled: false } 
+ ];
+
+ const Students = users.filter(u => u.enrolled);
+ console.log(Students);
+
+//Output:- [ { name: 'Jay', enrolled: true } ]
+
+
+const users = [ 
+  { name: 'Jay', enrolled: true }, 
+  { name: 'Raj', enrolled: false } 
+];
+
+const Students = users.filter(u => u.enrolled == true);
+console.log(Students);
