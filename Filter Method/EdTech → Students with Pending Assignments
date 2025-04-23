@@ -1,0 +1,18 @@
+
+ const students = [{ name: 'Arjun', pending: true }, 
+
+  { name: 'Simran', pending: false }];
+ 
+ const PA = students.filter(s => s.pending);
+ console.log(PA);
+
+//Output:- [ { name: 'Arjun', pending: true } ]
+
+
+const students = [{name:'Arjun', pending: true},
+{name: 'Simran', pending: false}];
+
+const PA = students.filter(s => s.pending == true);
+console.log(PA);
+
+//Output:- [ { name: 'Arjun', pending: true } ]
