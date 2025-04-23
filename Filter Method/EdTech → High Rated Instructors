@@ -1,0 +1,10 @@
+
+const instructors = [ 
+  { name: 'Nina', rating: 4.8 }, 
+  { name: 'Rohit', rating: 3.9 } 
+];
+
+const HighRated = instructors.filter(i => i.rating > 4.5);
+console.log(HighRated);
+
+//Output:- [ { name: 'Nina', rating: 4.8 } ]
