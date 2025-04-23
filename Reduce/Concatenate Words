@@ -1,0 +1,7 @@
+
+const words = ["Welcome", "to", "our", "platform"]; 
+const sentence = words.reduce((acc, word) => acc + " " + word); 
+  
+  console.log(sentence);
+  
+  // Output:- Welcome to our platform
