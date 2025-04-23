@@ -1,0 +1,22 @@
+1.
+ const faculty1 = ['AI', 'ML', 'DSA']; 
+
+ const faculty2 = ['ML', 'Cloud']; 
+
+ const uniqueCourses = [...faculty1.filter(c => !faculty2.includes(c)), ...faculty2.filter(c => !faculty1.includes(c))]; 
+
+ console.log(uniqueCourses);
+// //Output:- [ 'AI', 'DSA', 'Cloud' ]
+
+
+2.
+ const faculty1 = ['AI', 'ML', 'DSA']; 
+const faculty2 = ['ML', 'Cloud']; 
+
+const unique1 = faculty1.filter(f => !faculty2.includes(f));
+const unique2 = faculty2.filter(f => !faculty1.includes(f));
+
+const unique = unique1.concat(unique2);
+console.log(unique);
+
+//OUtput:- [ 'AI', 'DSA', 'Cloud' ]
