@@ -1,0 +1,10 @@
+
+const studentA = ['Math', 'Physics', 'Biology']; 
+const studentB = ['Physics', 'Chemistry'];
+
+const uncommenSubject = studentA.filter(student => !studentB.includes(student));
+console.log(uncommenSubject)
+
+
+//Output:- [ 'Math', 'Biology' ]
+
