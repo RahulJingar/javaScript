@@ -1,4 +1,4 @@
-
+1.
 const campusA = ['CS', 'ECE', 'IT']; 
 const campusB = ['ECE', 'ME'];
 
@@ -9,3 +9,14 @@ const unique = A.concat(B);
 console.log(unique);
 
 // Output:- [ 'CS', 'IT', 'ME' ]
+
+2.
+//  4. Unique Courses Offered in Two Campuses 
+
+const campusA = ['CS', 'ECE', 'IT']; 
+const campusB = ['ECE', 'ME']; 
+const uniqueCourses = [...campusA.filter(c => !campusB.includes(c)), ...campusB.filter(c => !campusA.includes(c))]; 
+
+console.log(uniqueCourses);
+
+//Output:- [ 'CS', 'IT', 'ME' ]
