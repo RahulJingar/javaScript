@@ -1,0 +1,8 @@
+
+const values = [10, 45, 23, 89]; 
+
+const min = values.reduce((acc, val) => acc ? acc : val);
+
+console.log('min:',min);
+
+//Output:- min: 10
