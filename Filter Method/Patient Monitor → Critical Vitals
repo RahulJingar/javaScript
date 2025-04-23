@@ -1,0 +1,7 @@
+
+const vitals = [{ oxygen: 92 }, { oxygen: 85 }];
+
+const Patient = vitals.filter(v => v.oxygen>90);
+console.log(Patient);
+
+//Output:- [{ oxygen: 92 }]
