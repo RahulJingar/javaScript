@@ -1,0 +1,23 @@
+1.
+
+const docA = ['Diabetes', 'Hypertension', 'Asthma']; 
+const docB = ['Asthma', 'Anemia']; 
+const d1 = docA.filter(d => !docB.includes(d)); 
+const d2 = docB.filter(d => !docA.includes(d));
+
+ console.log(d1.concat(d2));
+
+//Output:- [ 'Diabetes', 'Hypertension', 'Anemia' ]
+
+
+
+2. 
+
+const docA = ['Diabetes', 'Hypertension', 'Asthma']; 
+const docB = ['Asthma', 'Anemia']; 
+const uncommonDiseases = [...docA.filter(d => !docB.includes(d)), ...docB.filter(d => !docA.includes(d))]; 
+  
+
+ console.log(uncommonDiseases);
+
+//Output:- [ 'Diabetes', 'Hypertension', 'Anemia' ]
