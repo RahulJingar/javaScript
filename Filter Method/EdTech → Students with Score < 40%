@@ -1,0 +1,11 @@
+ 
+
+const scores = [ 
+  { name: 'Anjali', score: 35 }, 
+  { name: 'Mihir', score: 85 } 
+];
+
+const Score = scores.filter(s => s.score < 40);
+console.log(Score);
+
+//Output:- [{ name: 'Anjali', score: 35 }]
