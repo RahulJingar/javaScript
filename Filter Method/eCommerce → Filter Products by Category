@@ -1,0 +1,8 @@
+
+const items = [{ name: 'Shoes', category: 'Footwear' }, { name: 'T-shirt', category: 'Clothing' }];
+
+const eCommerce = items.filter(i => i.category == 'Footwear');
+
+console.log(eCommerce);
+
+//Output:- [ { name: 'Shoes', category: 'Footwear' } ]
