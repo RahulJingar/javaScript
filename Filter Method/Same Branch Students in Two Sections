@@ -1,0 +1,8 @@
+
+const sectionA = ['CS', 'IT', 'ECE']; 
+const sectionB = ['IT', 'EEE']; 
+
+const Same = sectionA.filter(s => sectionB.includes(s));
+console.log(Same);
+
+//Output:- [ 'IT' ]
