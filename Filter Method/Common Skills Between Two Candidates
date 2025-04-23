@@ -1,0 +1,8 @@
+
+const candidateA = ['JavaScript', 'Python', 'React']; 
+const candidateB = ['Python', 'Java', 'React']; 
+
+const Skill = candidateA.filter(skills => candidateB.includes(skills));
+console.log(Skill);
+
+//Output:- [ 'Python', 'React' ]
