@@ -1,0 +1,10 @@
+
+const orders = [ 
+  { id: 'ORD001', payment: 'COD' }, 
+  { id: 'ORD002', payment: 'Online' } 
+];
+
+const CODOrders = orders.filter(order => order.payment == 'COD');
+console.log(CODOrders);
+
+//Output:- [{id: 'ORD001', payment: 'COD' }]
