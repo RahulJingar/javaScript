@@ -1,0 +1,5 @@
+const nums = [1, 2, 3, 4, 5];
+const fact = nums.reduce((acc, num) => acc * num, 1);
+console.log('Factorial is:', fact);
+
+// Output:- Factorial is: 120
