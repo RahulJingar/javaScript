@@ -1,0 +1,7 @@
+
+const beds = [{ id: 101, type: 'General' }, { id: 202, type: 'ICU' }];
+
+const ICUBeds = beds.filter(b => b.type == 'ICU');
+console.log(ICUBeds);
+
+//Output:- [{ id: 202, type: 'ICU' }]
