@@ -1,0 +1,13 @@
+1.
+ const emails = [{ subject: 'Report', read: true }, { subject: 'Alert', read: false }];
+
+ const unreadOnly = emails.filter(e => !e.read);
+ console.log(unreadOnly);
+
+//Output:- [{ subject: 'Alert', read: false }]
+
+2.
+const emails = [{ subject: 'Report', read: true }, { subject: 'Alert', read: false }];
+
+const unreadOnly = emails.filter(e => e.read == false);
+console.log(unreadOnly);
