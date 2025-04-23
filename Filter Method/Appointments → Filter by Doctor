@@ -1,0 +1,10 @@
+
+const appointments = [ 
+  { patient: 'Sam', doctor: 'Dr. Rao' }, 
+  { patient: 'Neha', doctor: 'Dr. Bose' } 
+];
+
+const Appoinments = appointments.filter(a => a.doctor == 'Dr. Rao');
+console.log(Appoinments);
+
+//Output:- [ { patient: 'Sam', doctor: 'Dr. Rao' }]
