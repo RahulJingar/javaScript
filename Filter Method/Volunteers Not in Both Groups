@@ -1,0 +1,21 @@
+1.
+const group1 = ['Anu', 'Kabir', 'Neha']; 
+const group2 = ['Neha', 'Aman'];
+
+ const uncommon1 = group1.filter(g => !group2.includes(g));
+ const uncommon2 = group2.filter(g => !group1.includes(g));
+
+ const result = uncommon1.concat(uncommon2);
+
+ console.log(result);
+
+//Output:- [ 'Anu', 'Kabir', 'Aman' ]
+
+
+2.
+const group1 = ['Anu', 'Kabir', 'Neha']; 
+const group2 = ['Neha', 'Aman'];
+const ans =[ ...group1.filter(g => !group2.includes(g)), ...group2.filter(b => !group1.includes(b))];
+console.log(ans);
+
+//Output:- [ 'Anu', 'Kabir', 'Aman' ]
