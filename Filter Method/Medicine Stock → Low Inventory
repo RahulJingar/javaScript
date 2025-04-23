@@ -1,0 +1,7 @@
+
+const meds = [{ name: 'Aspirin', qty: 50 }, { name: 'Amoxicillin', qty: 5 }];
+
+const Medicine = meds.filter(m => m.qty<10);
+console.log(Medicine);
+
+//Output:- [{ name: 'Amoxicillin', qty: 5 }]
