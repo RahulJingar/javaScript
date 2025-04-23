@@ -1,0 +1,11 @@
+
+const campusA = ['CS', 'ECE', 'IT']; 
+const campusB = ['ECE', 'ME'];
+
+const A = campusA.filter(a =>!campusB.includes(a));
+const B = campusB.filter(b =>!campusA.includes(b));
+
+const unique = A.concat(B);
+console.log(unique);
+
+// Output:- [ 'CS', 'IT', 'ME' ]
