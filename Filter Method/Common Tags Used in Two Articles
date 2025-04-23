@@ -1,0 +1,9 @@
+
+
+const tags1 = ['tech', 'startup', 'ai']; 
+const tags2 = ['finance', 'ai', 'startup'];
+
+const Common = tags1.filter(t => tags2.includes(t));
+console.log(Common);
+
+//Output:- ['startup', 'ai']
