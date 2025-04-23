@@ -1,0 +1,22 @@
+1.
+ const dataset1 = ['SampleA', 'SampleB']; 
+ const dataset2 = ['SampleC', 'SampleB'];
+
+ const disjoint1 = dataset1.filter(d => !dataset2.includes(d));
+ const disjoint2 = dataset2.filter(d => !dataset1.includes(d));
+
+ const dataSets = disjoint1.concat(disjoint2);
+
+ console.log(dataSets);
+
+//Output:- [ 'SampleA', 'SampleC' ]
+
+
+2.
+const dataset1 = ['SampleA', 'SampleB']; 
+const dataset2 = ['SampleC', 'SampleB']; 
+const uniqueSamples = [...dataset1.filter(s => !dataset2.includes(s)), ...dataset2.filter(s => !dataset1.includes(s))]; 
+
+console.log(uniqueSamples);
+
+//Output:- [ 'SampleA', 'SampleC' ]
