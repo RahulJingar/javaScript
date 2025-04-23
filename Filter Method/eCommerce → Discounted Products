@@ -1,0 +1,10 @@
+
+
+const items = [{ name: 'Laptop', discount: 10 }, 
+
+ { name: 'Mouse', discount: 0 }];
+ 
+const DiscountProducts = items.filter(item => item.discount>0);
+console.log(DiscountProducts);
+
+//Output:- [{ name: 'Laptop', discount: 10 }]
