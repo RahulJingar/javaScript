@@ -1,0 +1,22 @@
+1.
+const project1 = ['Node', 'Express', 'MongoDB']; 
+const project2 = ['Django', 'MongoDB', 'React'];
+
+const uncommon = project1.filter(p => !project2.includes(p));
+const unCommon = project2.filter(p => !project1.includes(p));
+
+console.log(uncommon.concat(unCommon));
+
+
+//Output:- [ 'Node', 'Express', 'Django', 'React' ]
+
+
+2.
+
+const project1 = ['Node', 'Express', 'MongoDB']; 
+const project2 = ['Django', 'MongoDB', 'React'];
+
+const uncommon = [...project1.filter(p => !project2.includes(p)), ...project2.filter(p => !project1.includes(p))]
+console.log(uncommon);
+
+//Output:- [ 'Node', 'Express', 'Django', 'React' ]
