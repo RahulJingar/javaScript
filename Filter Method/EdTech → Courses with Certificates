@@ -1,0 +1,22 @@
+
+ const courses = [ 
+   { title: 'React Basics', cert: true }, 
+  { title: 'Java Debugging', cert: false } 
+ ];
+
+ const Certificate = courses.filter(c => c.cert);
+ console.log(Certificate);
+
+//Output:- [{ title: 'React Basics', cert: true }]
+
+
+const courses = [ 
+  { title: 'React Basics', cert: true }, 
+  { title: 'Java Debugging', cert: false } 
+];
+
+const Certificate = courses.filter(c => c.cert == true);
+console.log(Certificate);
+
+//Output:- [ { title: 'React Basics', cert: true } ]
+
