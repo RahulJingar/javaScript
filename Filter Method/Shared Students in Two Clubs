@@ -1,0 +1,8 @@
+
+const clubA = ['Ankit', 'Megha', 'Riya']; 
+const clubB = ['Riya', 'Sam', 'Ankit'];
+
+const students = clubA.filter(c => clubB.includes(c));
+console.log(students);
+
+//Output:- [ 'Ankit', 'Riya' ]
