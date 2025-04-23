@@ -1,0 +1,13 @@
+1.
+const devices = [{ id: 'D1', online: true }, { id: 'D2', online: false }];
+ const Device = devices.filter(d => !d.online);
+ console.log(Device);
+
+//Output:- [ { id: 'D2', online: false } ]
+
+2.
+const devices = [{ id: 'D1', online: true }, { id: 'D2', online: false }];
+const Device = devices.filter(d => d.online == false);
+console.log(Device);
+
+//Output:- [ { id: 'D2', online: false } ]
