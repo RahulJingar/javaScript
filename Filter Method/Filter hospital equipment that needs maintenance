@@ -1,0 +1,41 @@
+1.
+const equipment = [
+  { id: 1, name: "ECG Machine", needsMaintenance: true },
+  { id: 2, name: "Ventilator", needsMaintenance: false },
+  { id: 3, name: "Suction Pump", needsMaintenance: true },
+  { id: 4, name: "Ultrasound", needsMaintenance: false }
+];
+
+const hospital = equipment.filter(e => e.needsMaintenance);
+
+console.log(hospital);
+
+/*Output:- [
+                 { id: 1, name: "ECG Machine", needsMaintenance: true },
+                 { id: 3, name: "Suction Pump", needsMaintenance: true }
+           ]
+*/       
+
+
+
+
+2.
+const equipment = [
+  { id: 1, name: "ECG Machine", needsMaintenance: true },
+  { id: 2, name: "Ventilator", needsMaintenance: false },
+  { id: 3, name: "Suction Pump", needsMaintenance: true },
+  { id: 4, name: "Ultrasound", needsMaintenance: false }
+];
+
+const hospital = equipment.filter(e => e.needsMaintenance == true);
+
+console.log(hospital);
+
+/*Output:- [
+                 { id: 1, name: "ECG Machine", needsMaintenance: true },
+                 { id: 3, name: "Suction Pump", needsMaintenance: true }
+           ]
+*/       
+    
+
+    
