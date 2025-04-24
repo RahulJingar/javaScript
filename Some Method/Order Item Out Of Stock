@@ -1,0 +1,22 @@
+1.
+const cart = [{ name: "Phone", stock: true }, 
+
+ { name: "Cable", stock: false }]; 
+ 
+const outOfStock =  cart.some(c => !c.stock);
+
+console.log(outOfStock);
+
+//Output:- true
+
+
+2.
+const cart = [{ name: "Phone", stock: true }, 
+
+ { name: "Cable", stock: false }]; 
+ 
+const outOfStock =  cart.some(c => c.stock == false);
+
+console.log(outOfStock);
+
+//Output:- true
