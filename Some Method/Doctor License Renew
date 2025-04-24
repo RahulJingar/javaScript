@@ -1,0 +1,23 @@
+1.
+const doctors = [{ name: "Dr. Sinha", renewed: true }, 
+
+ { name: "Dr. Mehta", renewed: false }]; 
+
+const doctor = doctors.some(d => d.renewed);
+
+console.log(doctor);
+
+//Output:- true
+
+
+
+2.
+const doctors = [{ name: "Dr. Sinha", renewed: true }, 
+
+ { name: "Dr. Mehta", renewed: false }]; 
+
+const doctor = doctors.some(d => d.renewed == true);
+
+console.log(doctor);
+
+//Output:- true
