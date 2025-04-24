@@ -1,0 +1,10 @@
+
+const assignments = [{ due: "2025-04-12" },  
+
+{ due: "2025-04-05" }]; 
+
+const assignment = assignments.some(a => new Date(a.due) < new Date);
+
+console.log(assignment);
+
+//Output:- true
