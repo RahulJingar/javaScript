@@ -1,0 +1,15 @@
+
+const employees = [
+  { id: 1, name: "Meera", joiningYear: 2023 },
+  { id: 2, name: "Aakash", joiningYear: 2025 },
+  { id: 3, name: "Suman", joiningYear: 2023 },
+  { id: 4, name: "Nikhil", joiningYear: 2021 }
+];
+
+const joinYear = employees.filter(e => e.joiningYear == 2025)
+
+console.log(joinYear);
+
+/*Output:- [ { id: 2, name: 'Aakash', joiningYear: 2025 } ]
+
+
