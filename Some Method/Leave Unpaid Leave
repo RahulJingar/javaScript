@@ -1,0 +1,9 @@
+
+const leaves = [{ type: "paid" },  
+
+{ type: "unpaid" }]; 
+
+const leave = leaves.some(l => l.type == 'unpaid');
+console.log(leave);
+
+//Output:- true
