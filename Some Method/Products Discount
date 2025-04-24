@@ -1,0 +1,8 @@
+const products = [{ name: "Shirt", discount: 0 }, 
+
+ { name: "Shoe", discount: 10 }]; 
+const hasDiscount = products.some(p => p.discount > 0); 
+
+console.log(hasDiscount);
+
+//Output:- true
