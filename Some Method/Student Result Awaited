@@ -1,0 +1,8 @@
+
+const students = [{ result: "published" }, { result: "awaited" }]; 
+
+const student = students.some(s => s.result == 'awaited');
+
+console.log(student);
+
+//Output:- true
