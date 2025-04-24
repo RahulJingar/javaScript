@@ -1,0 +1,20 @@
+1.
+const patients = [{ name: "Ravi", critical: true }, 
+
+ { name: "Neha", critical: false }]; 
+
+const Critical = patients.some(p => p.critical);
+console.log(Critical);
+
+//Output:- true 
+
+
+2.
+const patients = [{ name: "Ravi", critical: true }, 
+
+ { name: "Neha", critical: false }]; 
+
+const Critical = patients.some(p => p.critical == true);
+console.log(Critical);
+
+//Output:- true 
