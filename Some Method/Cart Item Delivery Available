@@ -1,0 +1,19 @@
+1.
+const cart = [{ deliverable: true }, { deliverable: false }]; 
+
+const cartItem = cart.some(c => c.deliverable);
+
+console.log(cartItem);
+
+//Output:- true
+
+
+
+2.
+const cart = [{ deliverable: true }, { deliverable: false }]; 
+
+const cartItem = cart.some(c => c.deliverable == true);
+
+console.log(cartItem);
+
+//Output:- true
