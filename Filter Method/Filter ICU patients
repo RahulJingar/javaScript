@@ -1,0 +1,17 @@
+
+const patients = [
+  { id: 1, name: "Karan", ward: "ICU" },
+  { id: 2, name: "Seema", ward: "General" },
+  { id: 3, name: "Nitin", ward: "ICU" },
+  { id: 4, name: "Suman", ward: "Private" }
+];
+
+const patient = patients.filter(p => p.ward == 'ICU');
+
+console.log(patient);
+
+/*Output:- [
+            { id: 1, name: "Karan", ward: "ICU" },
+              { id: 3, name: "Nitin", ward: "ICU" },
+        ]
+*/
