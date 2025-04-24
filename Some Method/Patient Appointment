@@ -1,0 +1,17 @@
+1.
+const appointments = [{ missed: false }, { missed: true }]; 
+
+const missPatient = appointments.some(a => a.missed);
+console.log(missPatient);
+
+//Output:- true
+
+
+
+2.
+const appointments = [{ missed: false }, { missed: true }]; 
+
+const missPatient = appointments.some(a => a.missed == true);
+console.log(missPatient);
+
+//Output:- true
