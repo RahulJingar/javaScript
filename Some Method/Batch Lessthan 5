@@ -1,0 +1,8 @@
+1.
+const batches = [{ count: 10 }, { count: 3 }]; 
+
+const batch = batches.some(b => b.count < 5);
+
+console.log(batch);
+
+//Output:- true
