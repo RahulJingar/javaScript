@@ -1,0 +1,8 @@
+
+const courses = [{ students: 90, limit: 100 }, { students: 120, limit: 100 }]; 
+
+const course = courses.some(c => c.students > c.limit);
+
+console.log(course);
+
+//Output:- true
