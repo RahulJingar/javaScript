@@ -1,0 +1,37 @@
+1.
+const drivers = [
+  { id: 1, name: "Suraj", onDuty: true },
+  { id: 2, name: "Harish", onDuty: false },
+  { id: 3, name: "Neeraj", onDuty: true },
+  { id: 4, name: "Aakash", onDuty: false }
+];
+
+const driver = drivers.filter(d => d.onDuty);
+
+console.log(driver);
+
+/* Output:- [
+                 { id: 1, name: "Suraj", onDuty: true },
+                 { id: 3, name: "Neeraj", onDuty: true },
+            ]
+*/
+
+
+
+2.
+const drivers = [
+  { id: 1, name: "Suraj", onDuty: true },
+  { id: 2, name: "Harish", onDuty: false },
+  { id: 3, name: "Neeraj", onDuty: true },
+  { id: 4, name: "Aakash", onDuty: false }
+];
+
+const driver = drivers.filter(d => d.onDuty == true);
+
+console.log(driver);
+
+/* Output:- [
+                 { id: 1, name: "Suraj", onDuty: true },
+                 { id: 3, name: "Neeraj", onDuty: true },
+            ]
+*/
