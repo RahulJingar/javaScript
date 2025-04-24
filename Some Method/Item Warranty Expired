@@ -1,0 +1,19 @@
+1.
+const items = [{ warrantyValid: true }, { warrantyValid: false }]; 
+
+const item = items.some(i => i.warrantyValid);
+
+console.log(item);
+
+//Output:- true
+
+
+
+2.
+const items = [{ warrantyValid: true }, { warrantyValid: false }]; 
+
+const item = items.some(i => i.warrantyValid == true);
+
+console.log(item);
+
+//Output:- true
