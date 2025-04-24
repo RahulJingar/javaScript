@@ -1,0 +1,8 @@
+
+const deliveries = [{ status: "delivered" }, { status: "failed" }]; 
+
+const deliver = deliveries.some(d => d.status == 'failed');
+
+console.log(deliver);
+
+//Output:- true
