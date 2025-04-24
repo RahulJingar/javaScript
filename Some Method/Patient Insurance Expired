@@ -1,0 +1,20 @@
+1.
+const patients = [{ name: "Rita", insuranceValid: true }, 
+ { name: "Amit", insuranceValid: false }]; 
+
+const patient = patients.some(p => p.insuranceValid);
+
+console.log(patient);
+
+//Output:- true
+
+
+2.
+const patients = [{ name: "Rita", insuranceValid: true }, 
+ { name: "Amit", insuranceValid: false }]; 
+
+const patient = patients.some(p => p.insuranceValid == true);
+
+console.log(patient);
+
+//Output:- true
