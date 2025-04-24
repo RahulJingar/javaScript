@@ -1,0 +1,19 @@
+1.
+const modules = [{ quizLocked: false }, { quizLocked: true }]; 
+
+const module = modules.some(m => m.quizLocked);
+
+console.log(module);
+
+//Output:- true
+
+
+
+2.
+const modules = [{ quizLocked: false }, { quizLocked: true }]; 
+
+const module = modules.some(m => m.quizLocked == true);
+
+console.log(module);
+
+//Output:- true
