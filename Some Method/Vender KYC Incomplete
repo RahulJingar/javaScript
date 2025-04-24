@@ -1,0 +1,18 @@
+1.
+const vendors = [{ kycDone: true }, { kycDone: false }]; 
+
+const KYC = vendors.some(v => !v.kycDone);
+
+console.log(KYC);
+
+//Output:- true
+
+
+2.
+const vendors = [{ kycDone: true }, { kycDone: false }]; 
+
+const KYC = vendors.some(v => v.kycDone == false);
+
+console.log(KYC);
+
+//Output:- true
