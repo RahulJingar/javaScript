@@ -1,0 +1,8 @@
+
+const sessions = [{ status: "scheduled" }, { status: "cancelled" }]; 
+
+const session = sessions.some(s => s.status == 'cancelled');
+
+console.log(session);
+
+//Output:- true
