@@ -1,0 +1,7 @@
+
+const reviews = [{ rating: 5 }, { rating: 1 }]; 
+
+const view = reviews.some(r => r.rating === 1);
+console.log(view);
+
+//Output:- true
