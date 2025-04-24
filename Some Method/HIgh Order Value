@@ -1,0 +1,7 @@
+
+const orders = [{ value: 400 }, { value: 1200 }]; 
+
+const order = orders.some(o => o.value>500);
+console.log(order);
+
+//Output:- true
