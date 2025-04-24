@@ -1,0 +1,19 @@
+1.
+const staff = [{ dueForPromotion: false }, { dueForPromotion: true }]; 
+
+const Employee = staff.some(s => s.dueForPromotion);
+
+console.log(Employee);
+
+//Output:- true
+
+
+
+2.
+const staff = [{ dueForPromotion: false }, { dueForPromotion: true }]; 
+
+const Employee = staff.some(s => s.dueForPromotion == true);
+
+console.log(Employee);
+
+//Output:- true
