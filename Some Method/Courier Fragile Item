@@ -1,0 +1,19 @@
+1.
+const couriers = [{ fragile: false }, { fragile: true }]; 
+
+const courier = couriers.some(c => c.fragile);
+
+console.log(courier);
+
+//Output:- true
+
+
+
+2.
+const couriers = [{ fragile: false }, { fragile: true }]; 
+
+const courier = couriers.some(c => c.fragile == true);
+
+console.log(courier);
+
+//Output:- true
