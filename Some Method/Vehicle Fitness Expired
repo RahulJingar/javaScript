@@ -1,0 +1,18 @@
+1.
+const vehicles = [{ fitnessValid: true }, { fitnessValid: false }]; 
+
+const vehicle = vehicles.some(v => v.fitnessValid);
+
+console.log(vehicle);
+
+//Output:- true
+
+
+2.
+const vehicles = [{ fitnessValid: true }, { fitnessValid: false }]; 
+
+const vehicle = vehicles.some(v => v.fitnessValid == true);
+
+console.log(vehicle);
+
+//Output:- true
