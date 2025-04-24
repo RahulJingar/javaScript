@@ -1,0 +1,7 @@
+    
+const salaries = [{ status: "paid" }, { status: "due" }]; 
+
+const overDue = salaries.some(s => s.status == 'due');
+console.log(overDue);
+
+//Output:- true
