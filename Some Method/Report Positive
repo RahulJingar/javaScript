@@ -1,0 +1,7 @@
+
+const reports = ["negative", "positive", "negative"]; 
+
+const test = reports.some(r => r == 'positive');
+console.log(test);
+
+//Output:- true
