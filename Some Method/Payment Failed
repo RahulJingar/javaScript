@@ -1,0 +1,12 @@
+1.
+const payments = [{ status: "success" }, { status: "failed" }]; 
+
+const payment = payments.some(p => p.status == 'failed');
+
+console.log(payment);
+
+//Output:- true
+
+
+
+
