@@ -1,0 +1,17 @@
+1.
+const ids = [{ expired: false }, { expired: true }]; 
+
+const id = ids.some(i => i.expired);
+console.log(id);
+
+//Output:- true
+
+
+
+2.
+const ids = [{ expired: false }, { expired: true }]; 
+
+const id = ids.some(i => i.expired == true);
+console.log(id);
+
+//Output:- true
