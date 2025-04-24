@@ -1,0 +1,19 @@
+1.
+const tests = [{ delayed: false }, { delayed: true }]; 
+
+const test = tests.some(t => t.delayed);
+
+console.log(test);
+
+//Output:- true
+
+
+
+2.
+const tests = [{ delayed: false }, { delayed: true }]; 
+
+const test = tests.some(t => t.delayed == true);
+
+console.log(test);
+
+//Output:- true
