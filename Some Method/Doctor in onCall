@@ -1,0 +1,20 @@
+1.
+const doctors = [{ name: "Dr. A", onCall: false },  
+
+{ name: "Dr. B", onCall: true }]; 
+
+const doctor = doctors.some(d => d.onCall);
+console.log(doctor);
+
+//Output:- true
+
+
+2.
+const doctors = [{ name: "Dr. A", onCall: false },  
+
+{ name: "Dr. B", onCall: true }]; 
+
+const doctor = doctors.some(d => d.onCall == true);
+console.log(doctor);
+
+//Output:- true
