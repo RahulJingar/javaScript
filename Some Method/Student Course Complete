@@ -1,0 +1,19 @@
+1.
+const students = [{ completed: true }, { completed: false }];
+
+const student = students.some(s => s.completed);
+
+console.log(student);
+
+//Output:- true
+
+
+
+2.
+const students = [{ completed: true }, { completed: false }];
+
+const student = students.some(s => s.completed == true);
+
+console.log(student);
+
+//Output:- true
