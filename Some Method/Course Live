@@ -1,0 +1,19 @@
+1.
+const courses = [{ title: "JS", live: false }, { title: "React", live: true }]; 
+
+const course = courses.some(c => c.live);
+
+console.log(course);
+
+//Output:- true
+
+
+
+2.
+const courses = [{ title: "JS", live: false }, { title: "React", live: true }]; 
+
+const course = courses.some(c => c.live == true);
+
+console.log(course);
+
+//Output:- true
