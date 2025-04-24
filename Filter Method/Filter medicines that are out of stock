@@ -1,0 +1,38 @@
+
+1.
+const medicines = [
+  { id: 1, name: "Paracetamol", inStock: false },
+  { id: 2, name: "Amoxicillin", inStock: true },
+  { id: 3, name: "Ibuprofen", inStock: false },
+  { id: 4, name: "Metformin", inStock: true }
+];
+
+const medicine = medicines.filter(m => !m.inStock);
+
+console.log(medicine);
+
+
+/*Output:- [
+  { id: 1, name: 'Paracetamol', inStock: false },
+  { id: 3, name: 'Ibuprofen', inStock: false }
+        ]
+*/
+
+2.
+const medicines = [
+  { id: 1, name: "Paracetamol", inStock: false },
+  { id: 2, name: "Amoxicillin", inStock: true },
+  { id: 3, name: "Ibuprofen", inStock: false },
+  { id: 4, name: "Metformin", inStock: true }
+];
+
+const medicine = medicines.filter(m => m.inStock == false);
+
+console.log(medicine);
+
+
+/*Output:- [
+  { id: 1, name: 'Paracetamol', inStock: false },
+  { id: 3, name: 'Ibuprofen', inStock: false }
+        ]
+*/
