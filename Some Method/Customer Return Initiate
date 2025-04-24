@@ -1,0 +1,19 @@
+1.
+const orders = [{ returned: false }, { returned: true }]; 
+
+const order = orders.some(o => o.returned);
+
+console.log(order);
+
+//Output:- true
+
+
+
+2.
+const orders = [{ returned: false }, { returned: true }]; 
+
+const order = orders.some(o => o.returned == true);
+
+console.log(order);
+
+//Output:- true
