@@ -1,0 +1,20 @@
+1.
+const interns = [{ verified: true }, { verified: false }]; 
+
+const intern = interns.some(i => i.verified);
+
+console.log(intern);
+
+//Output:- true
+
+
+
+
+2.
+const interns = [{ verified: true }, { verified: false }]; 
+
+const intern = interns.some(i => i.verified == true);
+
+console.log(intern);
+
+//Output:- true
