@@ -1,0 +1,17 @@
+1.
+const documents = [{ verified: true }, { verified: false }]; 
+
+const document = documents.some(d => !d.verified);
+console.log(document);
+
+//Output:- true
+
+
+
+2.
+const documents = [{ verified: true }, { verified: false }]; 
+
+const document = documents.some(d => d.verified == false);
+console.log(document);
+
+//Output:- true
