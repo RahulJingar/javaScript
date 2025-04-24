@@ -1,0 +1,19 @@
+1.
+const subs = [{ active: true }, { active: false }]; 
+
+const expired = subs.some(s => !s.active);
+
+console.log(expired);
+
+//Output:- true
+
+
+
+2.
+const subs = [{ active: true }, { active: false }]; 
+
+const expired = subs.some(s => s.active == false);
+
+console.log(expired);
+
+//Output:- true
