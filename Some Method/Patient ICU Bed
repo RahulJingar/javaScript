@@ -1,0 +1,19 @@
+1.
+const queue = [{ icuRequired: false }, { icuRequired: true }]; 
+
+const que = queue.some(q => q.icuRequired);
+
+console.log(que);
+
+//Output:- true
+
+
+
+2.
+const queue = [{ icuRequired: false }, { icuRequired: true }]; 
+
+const que = queue.some(q => q.icuRequired == true);
+
+console.log(que);
+
+//Output:- true
