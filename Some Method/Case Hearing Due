@@ -1,0 +1,8 @@
+
+const cases = [{ hearingDate: null }, { hearingDate: "2025-04-20" }]; 
+
+const res = cases.some(c => c.hearingDate !== null);
+
+console.log(res);
+
+//Output:- true
