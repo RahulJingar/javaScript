@@ -1,0 +1,8 @@
+
+const attendance = [{ percent: 80 }, { percent: 72 }]; 
+
+const Employee = attendance.some(a => a.percent > 75);
+
+console.log(Employee);
+
+//Output:- true
