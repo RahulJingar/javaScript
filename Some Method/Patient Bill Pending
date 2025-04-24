@@ -1,0 +1,20 @@
+1.
+const bills = [{ id: 1, paid: true },  
+
+{ id: 2, paid: false }];
+
+const patient = bills.some(b => b.paid);
+console.log(patient);
+
+//Output:- true
+
+
+2.
+const bills = [{ id: 1, paid: true },  
+
+{ id: 2, paid: false }];
+
+const patient = bills.some(b => b.paid == true);
+console.log(patient);
+
+//Output:- true
