@@ -1,0 +1,8 @@
+
+
+const lowerCase = ['Rahul Sharma', 'Anita Das'];
+const lower = lowerCase.map(e => e.toLowerCase().replace(" ","."));
+
+console.log(lower);
+
+//Output:- [ 'rahul.sharma', 'anita.das' ]
