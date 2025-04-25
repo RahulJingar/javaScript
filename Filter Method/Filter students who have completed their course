@@ -1,0 +1,38 @@
+
+1.
+const students = [
+  { id: 1, name: "Ankit", courseCompleted: true },
+  { id: 2, name: "Divya", courseCompleted: false },
+  { id: 3, name: "Rajesh", courseCompleted: true },
+  { id: 4, name: "Kriti", courseCompleted: false }
+];
+
+const completed = students.filter(s => s.courseCompleted);
+
+console.log(completed);
+
+/*Output:-  [
+  { id: 1, name: "Ankit", courseCompleted: true },
+  { id: 3, name: "Rajesh", courseCompleted: true },
+]
+*/
+
+
+2.
+const students = [
+  { id: 1, name: "Ankit", courseCompleted: true },
+  { id: 2, name: "Divya", courseCompleted: false },
+  { id: 3, name: "Rajesh", courseCompleted: true },
+  { id: 4, name: "Kriti", courseCompleted: false }
+];
+
+const completed = students.filter(s => s.courseCompleted == true);
+
+console.log(completed);
+
+/*Output:-  [
+  { id: 1, name: "Ankit", courseCompleted: true },
+  { id: 3, name: "Rajesh", courseCompleted: true },
+]
+*/
+
