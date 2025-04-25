@@ -1,0 +1,36 @@
+1.
+const instructors = [
+  { id: 1, name: "Ritu", active: true },
+  { id: 2, name: "Adil", active: false },
+  { id: 3, name: "Neha", active: true },
+  { id: 4, name: "Mohit", active: false }
+];
+
+const currently = instructors.filter(i => i.active);
+
+console.log(currently);
+
+/*Output:- [
+  { id: 1, name: "Ritu", active: true },
+  { id: 3, name: "Neha", active: true },
+]
+*/
+
+
+2.
+const instructors = [
+  { id: 1, name: "Ritu", active: true },
+  { id: 2, name: "Adil", active: false },
+  { id: 3, name: "Neha", active: true },
+  { id: 4, name: "Mohit", active: false }
+];
+
+const currently = instructors.filter(i => i.active == true);
+
+console.log(currently);
+
+/*Output:- [
+  { id: 1, name: "Ritu", active: true },
+  { id: 3, name: "Neha", active: true },
+]
+*/
