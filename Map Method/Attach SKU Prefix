@@ -1,0 +1,8 @@
+
+const Prefix = ['A123', 'B456'];
+
+const SKUPreffix = Prefix.map(p => `SKU-${p}`);
+
+console.log(SKUPreffix);
+
+//Output:- [ 'SKU-A123', 'SKU-B456' ]
