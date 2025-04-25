@@ -1,0 +1,28 @@
+
+1.
+ const Sales = ['Client A', 'Client B'];
+
+ const Representative = Sales.map(s => `{name: '${s}', rep: Unassigned"}`);
+
+ console.log(Representative);
+
+ /*Output:- [
+   `{name: 'Client A', rep: Unassigned"}`,
+   `{name: 'Client B', rep: Unassigned"}`
+ ]
+ */
+
+2.
+const Sales = ['Client A', 'Client B'];
+
+const Representative = Sales.map(s => {
+   return `{name: '${s}', rep: Unassigned"}` 
+});
+
+console.log(Representative);
+
+/*Output:- [
+  `{name: 'Client A', rep: Unassigned"}`,
+  `{name: 'Client B', rep: Unassigned"}`
+]
+*/
