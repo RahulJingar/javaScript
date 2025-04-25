@@ -1,0 +1,16 @@
+
+const doctors = [
+  { id: 1, name: "Dr. Sara", rating: 4.8 },
+  { id: 2, name: "Dr. Rohit", rating: 4.2 },
+  { id: 3, name: "Dr. Isha", rating: 4.9 },
+  { id: 4, name: "Dr. Vinay", rating: 4.0 }
+];
+
+const doctor = doctors.filter(d => d.rating > 4.5);
+console.log(doctor);
+
+/*Output:-  [
+  { id: 1, name: "Dr. Sara", rating: 4.8 },
+  { id: 3, name: "Dr. Isha", rating: 4.9 },
+]
+*/
