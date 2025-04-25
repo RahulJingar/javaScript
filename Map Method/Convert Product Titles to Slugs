@@ -1,0 +1,21 @@
+
+1.
+ const slugs = ['Red Shirt', 'Blue Jeans'];
+
+ const product = slugs.map(s => s.toLowerCase().replace(" ","-"));
+
+ console.log(product);
+
+//Output:- [ 'red-shirt', 'blue-jeans' ]
+
+
+2.
+const slugs = ['Red Shirt', 'Blue Jeans'];
+
+const product = slugs.map(s => {
+    return s.toLowerCase().replace(" ","-")
+});
+
+console.log(product);
+
+//Output:- [ 'red-shirt', 'blue-jeans' ]
