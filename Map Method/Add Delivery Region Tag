@@ -1,0 +1,21 @@
+
+
+1.
+ const tag = ['Order A', 'Order B'];
+
+ const RegionTag = tag.map(t => {
+   return `${t} - North Zone`
+ });
+
+ console.log(RegionTag);
+
+ //Output:- [ 'Order A - North Zone', 'Order B - North Zone' ]
+
+
+const tag = ['Order A', 'Order B'];
+
+const RegionTag = tag.map(t => `${t} - North Zone`);
+
+console.log(RegionTag);
+
+//Output:- [ 'Order A - North Zone', 'Order B - North Zone' ]
