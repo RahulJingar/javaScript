@@ -1,0 +1,37 @@
+1.
+const items = [
+  { id: 1, name: "Books", freeShipping: true },
+  { id: 2, name: "Stationery", freeShipping: false },
+  { id: 3, name: "Smartphone", freeShipping: true },
+  { id: 4, name: "Speaker", freeShipping: false }
+];
+
+const eligible = items.filter(i => i.freeShipping);
+
+console.log(eligible);
+
+/*Output:- [
+  { id: 1, name: "Books", freeShipping: true },
+  { id: 3, name: "Smartphone", freeShipping: true },
+]
+*/
+
+
+
+2.
+const items = [
+  { id: 1, name: "Books", freeShipping: true },
+  { id: 2, name: "Stationery", freeShipping: false },
+  { id: 3, name: "Smartphone", freeShipping: true },
+  { id: 4, name: "Speaker", freeShipping: false }
+];
+
+const eligible = items.filter(i => i.freeShipping == true);
+
+console.log(eligible);
+
+/*Output:- [
+  { id: 1, name: "Books", freeShipping: true },
+  { id: 3, name: "Smartphone", freeShipping: true },
+]
+*/
