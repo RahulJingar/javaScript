@@ -1,0 +1,20 @@
+
+const subscriptions = [
+  { id: 1, user: "Kiran", expiresOn: "2025-04-24" },
+  { id: 2, user: "Rajat", expiresOn: "2025-04-30" },
+  { id: 3, user: "Simran", expiresOn: "2025-05-02" },
+  { id: 4, user: "Ajay", expiresOn: "2025-04-23" }
+];
+
+const startDate = new Date("2025-04-23");
+
+const expireWithSevenDays = subscriptions.filter(s =>{
+    const expireDate = new Date(s.expiresOn);
+    
+    const diff =    expireDate - startDate
+    const ans = diff/(1000*60*60*24)
+    
+    return ans > 0 && ans < 7
+})
+
+console.log(expireWithSevenDays);
