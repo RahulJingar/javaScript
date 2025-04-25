@@ -1,0 +1,22 @@
+
+1.
+ const shipments = [1001, 1002];
+
+ const shipmentPending = shipments.map(s => {
+     return `{id: ${s}, status: 'pending}`
+ });
+
+ console.log(shipmentPending);
+
+ //Output:- [ "{id: 1001, status: 'pending}", "{id: 1002, status: 'pending}" ]
+
+
+2.
+const shipments = [1001, 1002];
+
+const shipmentPending = shipments.map(s => `{id: ${s}, status: 'pending}`);
+
+console.log(shipmentPending);
+
+//Output:- [ "{id: 1001, status: 'pending}", "{id: 1002, status: 'pending}" ]
+
