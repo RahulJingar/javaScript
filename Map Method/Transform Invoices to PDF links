@@ -1,0 +1,19 @@
+1.
+const link = [301, 302];
+
+ const pdf = link.map(l => `/invoices/${l}.pdf`);
+
+ console.log(pdf);
+
+ //Output:- [ '/invoices/301.pdf', '/invoices/302.pdf' ]
+
+2.
+const link = [301, 302];
+
+const pdf = link.map(l => {
+    return `/invoices/${l}.pdf`
+});
+
+console.log(pdf);
+
+//Output:- [ '/invoices/301.pdf', '/invoices/302.pdf' ]
