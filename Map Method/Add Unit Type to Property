@@ -1,0 +1,23 @@
+
+1.
+ const Property = ['Green Villa', 'Oak Tower'];
+
+ const Unit = Property.map(p => {
+     const type = `${p} - Apartment`
+     return type;
+ });
+
+ console.log(Unit);
+
+ //Output:- [ 'Green Villa - Apartment', 'Oak Tower - Apartment' ]
+
+
+
+2.
+const Property = ['Green Villa', 'Oak Tower'];
+
+const Unit = Property.map(p => `${p} - Apartment`);
+
+console.log(Unit);
+
+//Output:- [ 'Green Villa - Apartment', 'Oak Tower - Apartment' ]
