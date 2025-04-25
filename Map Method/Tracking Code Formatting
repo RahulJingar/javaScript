@@ -1,0 +1,21 @@
+
+ 1.
+ const format = ['TR123', 'TR456'];
+
+ const trackingCode = format.map(f => {
+     return `Tracking: ${f}`
+ });
+
+ console.log(trackingCode);
+
+ //Output:- [ 'Tracking: TR123', 'Tracking: TR456' ]
+
+2.
+const format = ['TR123', 'TR456'];
+
+const trackingCode = format.map(f => `Tracking: ${f}`);
+
+console.log(trackingCode);
+
+//Output:- [ 'Tracking: TR123', 'Tracking: TR456' ]
+
