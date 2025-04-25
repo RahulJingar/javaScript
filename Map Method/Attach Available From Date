@@ -1,0 +1,28 @@
+1.
+const Date = ['Unit A', 'Unit B'];
+
+ const availableDate = Date.map(d => {
+     return `${d} - Available from 1st May`
+ });
+
+ console.log(availableDate);
+
+ /*Output:- [
+   'Unit A - Available from 1st May',
+   'Unit B - Available from 1st May'
+ ]
+ */
+
+
+2.
+const Date = ['Unit A', 'Unit B'];
+
+const availableDate = Date.map(d => `${d} - Available from 1st May`);
+
+console.log(availableDate);
+
+/*Output:- [
+  'Unit A - Available from 1st May',
+  'Unit B - Available from 1st May'
+]
+*/
