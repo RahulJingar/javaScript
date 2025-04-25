@@ -1,0 +1,21 @@
+1.
+ const number = [101, 102];
+
+ const RollNumbers = number.map(n => `Roll#${n}`);
+
+ console.log(RollNumbers);
+
+//Output:- [ 'Roll#101', 'Roll#102' ]
+
+
+
+2.
+const number = [101, 102];
+
+const RollNumbers = number.map(n => {
+    return  `Roll#${n}`
+})
+
+console.log(RollNumbers);
+
+//Output:- [ 'Roll#101', 'Roll#102' ]
