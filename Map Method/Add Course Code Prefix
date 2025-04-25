@@ -1,0 +1,7 @@
+
+const prefix = ['Math101', 'Eng102'];
+const Course = prefix.map((e) => `Course:${e}`)
+
+console.log(Course);
+
+//Output:- [ 'Course:Math101', 'Course:Eng102' ]
