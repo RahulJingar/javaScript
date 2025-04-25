@@ -1,0 +1,9 @@
+
+
+const Suffix = ['Digital Marketing', 'Finance Basics'];
+
+const Certificate = Suffix.map(s => `${s} - Cerified`)
+
+console.log(Certificate);
+
+//Output:- [ 'Digital Marketing - Cerified', 'Finance Basics - Cerified' ]
