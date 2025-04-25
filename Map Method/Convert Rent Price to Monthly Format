@@ -1,0 +1,21 @@
+1.
+ const price = [15000, 20000];
+
+ const monthlyFormat = price.map(p => {
+     return `₹${p}/month`
+ });
+
+ console.log(monthlyFormat);
+
+//Output:- [ '₹15000/month', '₹20000/month' ]
+
+
+
+2.
+const price = [15000, 20000];
+
+const monthlyFormat = price.map(p => `₹${p}/month`);
+
+console.log(monthlyFormat);
+
+//Output:- [ '₹15000/month', '₹20000/month' ]
