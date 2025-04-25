@@ -1,0 +1,8 @@
+
+const price = [499, 899];
+
+const textFormat = price.map(p => `Price: ₹${p}`);
+
+console.log(textFormat);
+
+//Output:- [ 'Price: ₹499', 'Price: ₹899' ]
