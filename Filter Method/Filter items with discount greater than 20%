@@ -1,0 +1,17 @@
+
+const items = [
+  { id: 1, name: "Shirt", discount: 25 },
+  { id: 2, name: "Jeans", discount: 15 },
+  { id: 3, name: "Shoes", discount: 30 },
+  { id: 4, name: "Cap", discount: 10 }
+];
+
+const discount = items.filter(i => i.discount > 20);
+
+console.log(discount);
+
+/*Output:- [
+  { id: 1, name: "Shirt", discount: 25 },
+  { id: 3, name: "Shoes", discount: 30 },
+]
+*/
