@@ -1,0 +1,22 @@
+
+1.
+ const student = ['Raj Verma', 'Kavita Rai'];
+
+ const emails = student.map(s => s.toLowerCase().replace(" ","." ) + "univ.com'");
+
+ console.log(emails);
+
+//Output:- [ "raj.vermauniv.com'", "kavita.raiuniv.com'" ]
+
+
+2.
+const student = ['Raj Verma', 'Kavita Rai'];
+
+const emails = student.map(s => {
+    return s.toLowerCase().replace(" ",".") + "univ.com";
+})
+
+console.log(emails);
+
+//Output:- [ "raj.vermauniv.com'", "kavita.raiuniv.com'" ]
+
