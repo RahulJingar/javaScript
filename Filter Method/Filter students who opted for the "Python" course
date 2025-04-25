@@ -1,0 +1,17 @@
+
+const students = [
+  { id: 1, name: "Tanmay", course: "JavaScript" },
+  { id: 2, name: "Ragini", course: "Python" },
+  { id: 3, name: "Harsh", course: "Python" },
+  { id: 4, name: "Mehul", course: "Java" }
+];
+
+const MyCourse = students.filter(s => s.course == 'Python');
+
+console.log(MyCourse);
+
+/*Output:-  [
+  { id: 2, name: "Ragini", course: "Python" },
+  { id: 3, name: "Harsh", course: "Python" },
+]
+*/
