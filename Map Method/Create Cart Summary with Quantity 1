@@ -1,0 +1,8 @@
+
+const Quantity =  ['Mouse', 'Keyboard'];
+
+const Cart = Quantity.map(q => `{item: '${q}, quantity: 1'}`);
+
+console.log(Cart);
+
+//Output:- [ "{item: 'Mouse, quantity: 1'}", "{item: 'Keyboard, quantity: 1'}" ]
