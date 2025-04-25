@@ -1,0 +1,22 @@
+1.
+  [45000, 52000] → ['₹45000', '₹52000']
+
+ const amount = [45000, 52000];
+ const Salary = amount.map(a => `₹${a}`);
+
+ console.log(Salary);
+
+// //Output:- [ '₹45000', '₹52000' ]
+
+
+
+2.
+const amount = [45000, 52000];
+
+const Salary = amount.map(a => {
+    return `₹${a}`
+});
+
+console.log(Salary);
+
+//Output:- [ '₹45000', '₹52000' ]
