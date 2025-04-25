@@ -1,0 +1,17 @@
+
+const doctors = [
+  { id: 1, name: "Dr. Tanya", onlineConsultation: true },
+  { id: 2, name: "Dr. Imran", onlineConsultation: false },
+  { id: 3, name: "Dr. Farah", onlineConsultation: true },
+  { id: 4, name: "Dr. Kunal", onlineConsultation: false }
+];
+
+const offer = doctors.filter(d => d.onlineConsultation || d.onlineConsultation == true)
+
+console.log(offer);
+
+/*Output:- [
+  { id: 1, name: "Dr. Tanya", onlineConsultation: true },
+  { id: 3, name: "Dr. Farah", onlineConsultation: true },
+]
+*/
