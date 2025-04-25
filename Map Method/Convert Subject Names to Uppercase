@@ -1,0 +1,23 @@
+
+1.
+const uppercase = ['history', 'geography'];
+
+ const Subject = uppercase.map(u => {
+     const Name = u.toUpperCase()
+     return Name
+ });
+
+ console.log(Subject);
+//Output:- [ 'HISTORY', 'GEOGRAPHY' ]
+
+
+2.
+const uppercase = ['history', 'geography'];
+
+const Subject = uppercase.map(u => u.toUpperCase())
+
+console.log(Subject);
+
+
+//Output:- [ 'HISTORY', 'GEOGRAPHY' ]
+
