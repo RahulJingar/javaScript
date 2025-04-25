@@ -1,0 +1,23 @@
+
+1.
+ const Section = ['S1', 'S2'];
+
+ const sameSection = Section.map(s => `{id:${s}, section: 'A' }`);
+
+ console.log(sameSection);
+
+//Output:- [ "{id:S1, section: 'A' }", "{id:S2, section: 'A' }" ]
+
+
+2.
+const Section = ['S1', 'S2'];
+
+const sameSection = Section.map(s => {
+    return `{id:${s}, section: 'A' }`
+})
+
+console.log(sameSection);
+
+//Output:- [ "{id:S1, section: 'A' }", "{id:S2, section: 'A' }" ]
+
+
