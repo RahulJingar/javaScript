@@ -1,0 +1,22 @@
+
+1.
+const str = ['alpha', 'beta'];
+
+ const character = str.map(s => s.charAt(0).toUpperCase() + s.slice(1));
+
+ console.log(character);
+
+ //Output:- [ 'Alpha', 'Beta' ]
+
+
+2.
+const str = ['alpha', 'beta'];
+
+const character = str.map(s => {
+    return s.charAt(0).toUpperCase() + s.slice(1)
+});
+
+console.log(character);
+
+//Output:- [ 'Alpha', 'Beta' ]
+
