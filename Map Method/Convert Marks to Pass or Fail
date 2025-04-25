@@ -1,0 +1,8 @@
+
+const marks = [65, 45, 30];
+
+const result = marks.map(m => m > 32 ? "Pass" : "Fail");
+
+console.log(result);
+
+//Output:- [ 'Pass', 'Pass', 'Fail' ]
