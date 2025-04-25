@@ -1,0 +1,11 @@
+
+
+const inComplete = ['Lesson 1', 'Lesson 2'];
+const ans = inComplete.map(e => `{Lesson: '${e}', completed: false }`)
+console.log(ans);
+
+/*Output:- [
+  "{Lesson: 'Lesson 1', completed: false }",
+  "{Lesson: 'Lesson 2', completed: false }"
+]
+*/
