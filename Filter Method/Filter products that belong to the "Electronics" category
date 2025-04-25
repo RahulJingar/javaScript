@@ -1,0 +1,17 @@
+
+const catalog = [
+  { id: 1, name: "TV", category: "Electronics" },
+  { id: 2, name: "Sofa", category: "Furniture" },
+  { id: 3, name: "Washing Machine", category: "Electronics" },
+  { id: 4, name: "Table", category: "Furniture" }
+];
+
+const electronicProduct = catalog.filter(c => c.category == "Electronics");
+
+console.log(electronicProduct);
+
+/*Output:-  [
+  { id: 1, name: "TV", category: "Electronics" },
+  { id: 3, name: "Washing Machine", category: "Electronics" },
+]
+*/
