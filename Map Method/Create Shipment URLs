@@ -1,0 +1,21 @@
+
+1.
+ const url = ['SHIP001', 'SHIP002'];
+
+ const shipment = url.map(u => {
+     return `/track/${u}`
+});
+
+ console.log(shipment);
+
+ //Output:- [ '/track/SHIP001', '/track/SHIP002' ]
+
+
+2.
+const url = ['SHIP001', 'SHIP002'];
+
+const shipment = url.map(u => `/track/${u}`);
+
+console.log(shipment);
+
+//Output:- [ '/track/SHIP001', '/track/SHIP002' ]
