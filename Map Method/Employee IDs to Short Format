@@ -1,0 +1,24 @@
+
+1.
+ const format = ['EMP001', 'EMP002'];
+
+ const short = format.map(f => f.slice(3,6));
+
+ console.log(short);
+
+ //Output:- [ '001', '002' ]
+
+2.
+const format = ['EMP001', 'EMP002'];
+
+const short = format.map(f => {
+    return f.slice(3,6)
+});
+
+console.log(short);
+
+//Output:- [ '001', '002' ]
+
+
+
+
