@@ -1,0 +1,10 @@
+
+
+const codes = ['C01', 'C02'];
+
+const client = codes.map(c => `CLIENT-${c}`);
+
+console.log(client);
+
+//Output:- [ 'CLIENT-C01', 'CLIENT-C02' ]
+
