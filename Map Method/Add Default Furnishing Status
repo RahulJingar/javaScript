@@ -1,0 +1,28 @@
+
+1.
+ const status = ['Flat 1', 'Flat 2'];
+ const Default = status.map(s => {
+     return `{name: ${s}, furnished: false}`
+ });
+
+ console.log(Default);
+
+ /*Output:- [
+   '{name: Flat 1, furnished: false}',
+   '{name: Flat 2, furnished: false}'
+ ]
+ */
+
+
+
+2.
+const status = ['Flat 1', 'Flat 2'];
+const Default = status.map(s => `{name: ${s}, furnished: false}`);
+
+console.log(Default);
+
+/*Output:- [
+  '{name: Flat 1, furnished: false}',
+  '{name: Flat 2, furnished: false}'
+]
+*/
