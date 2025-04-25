@@ -1,0 +1,11 @@
+
+const price = [100, 200, 500];
+const gstAmount = 0.18;
+const ApplyGst = price.map(p =>{
+    const applyGst = p * gstAmount;
+    return p + applyGst;
+})
+
+console.log(ApplyGst);
+
+//Output:- [ 118, 236, 590 ]
