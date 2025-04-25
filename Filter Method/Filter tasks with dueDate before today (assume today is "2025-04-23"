@@ -1,0 +1,15 @@
+const tasks = [
+  { id: 1, title: "Submit Resume", dueDate: "2025-04-20" },
+  { id: 2, title: "Attend Seminar", dueDate: "2025-04-24" },
+  { id: 3, title: "Project Meeting", dueDate: "2025-04-21" },
+  { id: 4, title: "Course Signup", dueDate: "2025-04-23" }
+];
+
+const beforeDate = new Date("2025-04-23");
+const dueDate = tasks.filter(t => {
+    const newDate = new Date(t.dueDate);
+    
+    return newDate < beforeDate;
+})
+
+console.log(dueDate);
