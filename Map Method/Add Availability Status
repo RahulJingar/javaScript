@@ -1,0 +1,9 @@
+
+
+const status = ['Item1', 'Item2'];
+
+const Availability = status.map(s => `{name: ${s}, available: true}`)
+
+console.log(Availability);
+
+//Output:- [ '{name: Item1, available: true}', '{name: Item2, available: true}' ]
