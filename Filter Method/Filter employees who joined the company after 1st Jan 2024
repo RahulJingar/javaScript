@@ -1,0 +1,24 @@
+
+const employees = [
+  { id: 1, name: "Isha", joinedOn: "2024-12-31" },
+  { id: 2, name: "Arjun", joinedOn: "2025-01-10" },
+  { id: 3, name: "Sneha", joinedOn: "2024-11-15" },
+    { id: 4, name: "sudarshan", joinedOn: "2022-12-31" },
+  { id: 5, name: "Dev", joinedOn: "2025-02-01" }
+];
+
+const firstDate = new Date("2024-01-01");
+const joined = employees.filter(e => {
+    const lastDate = new Date(e.joinedOn);
+    const diff = lastDate > firstDate;
+    return diff
+})
+console.log(joined);
+
+/*Output:- [
+  { id: 1, name: 'Isha', joinedOn: '2024-12-31' },
+  { id: 2, name: 'Arjun', joinedOn: '2025-01-10' },
+  { id: 3, name: 'Sneha', joinedOn: '2024-11-15' },
+  { id: 5, name: 'Dev', joinedOn: '2025-02-01' }
+]
+*/
