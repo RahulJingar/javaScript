@@ -1,0 +1,20 @@
+1.
+ const creation = ['P001', 'P002'];
+
+ const property = creation.map(c => {
+     return `/properties/${c}`
+ });
+
+ console.log(property);
+
+//Output:- [ '/properties/P001', '/properties/P002' ]
+
+
+2.
+const creation = ['P001', 'P002'];
+
+const property = creation.map(c => `/properties/${c}`);
+
+console.log(property);
+
+//Output:- [ '/properties/P001', '/properties/P002' ]
