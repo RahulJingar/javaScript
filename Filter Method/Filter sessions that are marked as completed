@@ -1,0 +1,38 @@
+
+1.
+const sessions = [
+  { id: 1, topic: "React Basics", completed: true },
+  { id: 2, topic: "Redux", completed: false },
+  { id: 3, topic: "Node.js", completed: true },
+  { id: 4, topic: "MongoDB", completed: false }
+];
+
+const completed = sessions.filter(s => s.completed);
+
+console.log(completed);
+
+/*Output:- [
+  { id: 1, topic: "React Basics", completed: true },
+  { id: 3, topic: "Node.js", completed: true },
+]
+*/
+
+
+
+2.
+const sessions = [
+  { id: 1, topic: "React Basics", completed: true },
+  { id: 2, topic: "Redux", completed: false },
+  { id: 3, topic: "Node.js", completed: true },
+  { id: 4, topic: "MongoDB", completed: false }
+];
+
+const completed = sessions.filter(s => s.completed == true);
+
+console.log(completed);
+
+/*Output:- [
+  { id: 1, topic: "React Basics", completed: true },
+  { id: 3, topic: "Node.js", completed: true },
+]
+*/
