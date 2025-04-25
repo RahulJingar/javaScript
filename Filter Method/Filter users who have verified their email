@@ -1,0 +1,38 @@
+ 
+1.
+const users = [
+  { id: 1, name: "Nikhil", emailVerified: true },
+  { id: 2, name: "Sana", emailVerified: false },
+  { id: 3, name: "Alok", emailVerified: true },
+  { id: 4, name: "Gauri", emailVerified: false }
+];
+
+const verified = users.filter(u => u.emailVerified);
+
+console.log(verified);
+
+/*Output:-  [
+  { id: 1, name: "Nikhil", emailVerified: true },
+  { id: 3, name: "Alok", emailVerified: true },
+]
+*/
+
+
+
+2.
+const users = [
+  { id: 1, name: "Nikhil", emailVerified: true },
+  { id: 2, name: "Sana", emailVerified: false },
+  { id: 3, name: "Alok", emailVerified: true },
+  { id: 4, name: "Gauri", emailVerified: false }
+];
+
+const verified = users.filter(u => u.emailVerified == true);
+
+console.log(verified);
+
+/*Output:-  [
+  { id: 1, name: "Nikhil", emailVerified: true },
+  { id: 3, name: "Alok", emailVerified: true },
+]
+*/
