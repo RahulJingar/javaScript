@@ -1,0 +1,24 @@
+
+1.
+ const format = [2, 4];
+
+const deliveryTime = format.map(f => {
+     return `${f} days`
+ });
+
+ console.log(deliveryTime);
+
+ //Output:- [ '2 days', '4 days' ]
+
+
+
+2.
+const format = [2, 4];
+
+const deliveryTime = format.map(f => `${f} days`);
+
+console.log(deliveryTime);
+
+//Output:- [ '2 days', '4 days' ]
+
+
