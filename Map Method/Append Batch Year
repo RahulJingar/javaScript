@@ -1,0 +1,9 @@
+
+
+const Batch = ['Amit', 'Neha'];
+
+const AppendYear = Batch.map(b => `${b} - 2020`);
+
+console.log(AppendYear);
+
+//Output:- [ 'Amit - 2020', 'Neha - 2020' ]
