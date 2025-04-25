@@ -1,0 +1,20 @@
+
+1.
+ const ids = ['Rita Kumar', 'Anil Roy'];
+
+ const Emails = ids.map(i => i.toLowerCase().replace(" ",".") + '@company.com');
+
+ console.log(Emails);
+
+ //Output:- [ 'rita.kumar@company.com', 'anil.roy@company.com' ]
+
+2.
+const ids = ['Rita Kumar', 'Anil Roy'];
+
+const Emails = ids.map(i => {
+    return i.toLowerCase().replace(" ",".") + '@company.com'
+});
+
+console.log(Emails);
+
+//Output:- [ 'rita.kumar@company.com', 'anil.roy@company.com' ]
