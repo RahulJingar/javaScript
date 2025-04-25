@@ -1,0 +1,21 @@
+
+1.
+ const lead = ['Lead1', 'Lead2'];
+
+ const status = lead.map(l => `{name: '${l}', status: new}`);
+
+ console.log(status);
+
+ //Output:- [ "{name: 'Lead1', status: new}", "{name: 'Lead2', status: new}" ]
+
+2.
+const lead = ['Lead1', 'Lead2'];
+
+const status = lead.map(l => {
+
+    return `{name: '${l}', status: new}`
+});
+
+console.log(status);
+
+//Output:- [ "{name: 'Lead1', status: new}", "{name: 'Lead2', status: new}" ]
