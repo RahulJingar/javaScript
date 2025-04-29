@@ -1,0 +1,21 @@
+1.
+ const words = ["Welcome", "to", "our", "platform"]; 
+
+ const sentence = words.reduce((acc,num) => acc + " " + num);
+
+ console.log("sentence is: ", sentence);
+
+//Output:- sentence is:  Welcome to our platform
+
+
+
+2.
+const words = ["Welcome", "to", "our", "platform"]; 
+const sentence = words.reduce((acc,num) => {
+    const word = acc + " " + num;
+    return word;
+});
+
+console.log(sentence)
+
+//Output:- sentence is:  Welcome to our platform
