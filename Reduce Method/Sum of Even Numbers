@@ -1,0 +1,8 @@
+
+ const numbers = [1, 2, 3, 4, 5]; 
+
+ const sum = numbers.reduce((acc,num) => num%2 === 0 ? acc + num : acc, 0);
+
+ console.log("sum of even number:", sum);
+
+//Output:- sum of even number: 6
