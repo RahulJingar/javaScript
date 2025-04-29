@@ -1,0 +1,19 @@
+1.
+ const values = [10, 45, 23, 89]; 
+
+ const value = values.reduce((acc,num) => num > acc ? num : acc);
+
+ console.log("Max value is:", value);
+
+//Output:- Max value is: 89
+
+2.
+const values = [10, 45, 23, 89];
+const Max = values.reduce((acc,val) => {
+    const max = val > acc ? val : acc;
+    return max;
+});
+
+console.log("Max Value is:",Max);
+
+//Output:- Max Value is: 89
