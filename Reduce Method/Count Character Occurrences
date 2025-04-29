@@ -1,0 +1,11 @@
+
+const chars = ['a', 'b', 'a', 'c', 'b']; 
+
+const char = chars.reduce((acc,ch) => {
+     acc[ch] = (acc[ch] || 0) + 1
+     return acc;
+},{});
+
+console.log(char);
+
+//Output:- { a: 2, b: 2, c: 1 }
