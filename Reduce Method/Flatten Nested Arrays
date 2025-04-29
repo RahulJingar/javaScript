@@ -1,0 +1,20 @@
+1.
+const nested = [[1, 2], [3, 4], [5]]; 
+
+ const res = nested.reduce((acc,val) => acc.concat(val));
+
+ console.log(res);
+
+//Output:- [ 1, 2, 3, 4, 5 ]
+
+2.
+const nested = [[1, 2], [3, 4], [5]]; 
+
+const res = nested.reduce((acc,num) => {
+    const ac = acc.concat(num);
+    return ac;
+});
+
+console.log(res);
+
+//Output:- [ 1, 2, 3, 4, 5 ]
