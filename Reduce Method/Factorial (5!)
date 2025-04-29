@@ -1,0 +1,19 @@
+ 1. 
+ const nums = [1, 2, 3, 4, 5]; 
+
+ const fact = nums.reduce((acc,num) => acc * num, 1);
+
+ console.log("Factorial:", fact);
+
+ //Output:- Factorial: 120
+
+
+2.
+const nums = [1, 2, 3, 4, 5]; 
+const Fact = nums.reduce((acc,num) => {
+    return acc * num;
+},1);
+
+console.log("Factorial:", Fact);
+
+ //Output:- Factorial: 120
