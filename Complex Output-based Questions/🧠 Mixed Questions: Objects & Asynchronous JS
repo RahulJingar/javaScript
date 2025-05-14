@@ -1,0 +1,103 @@
+
+// 1.
+const obj = {
+  message: 'Hello',
+  greet() {
+    setTimeout(() => console.log(this.message), 0);
+  },
+};
+obj.greet();
+
+
+//Output:- Hello
+
+
+// 2.
+const obj = {
+  count: 0,
+  increment() {
+    setInterval(() => {
+     this.count++;
+      console.log(this.count);
+    }, 100);
+  },
+};
+obj.increment();
+
+
+//Output:- 1 se start hoga or 100 mili second main infinite tak jaayega
+
+
+
+// 3.
+const obj = {
+  value: 42,
+  delayedLog: function() {
+    setTimeout(function() {
+      console.log(this.value);
+    }, 100);
+  },
+};
+obj.delayedLog();
+
+//Output:- undefined because setTimeout is store the normal function but setTimeout only store the arrow function
+
+
+
+
+// 4.
+const user = {
+  name: 'Alice',
+  sayHi() {
+    setTimeout(() => console.log(`Hi, ${this.name}`), 0);
+  },
+};
+user.sayHi();
+
+//Output:- Hi, Alice
+
+
+// 34.
+const car = {
+  brand: 'Toyota',
+  getBrand: function() {
+    setTimeout(() => console.log(this.brand), 50);
+  },
+};
+car.getBrand();
+
+
+//Output:- Toyota
+
+
+// 5.
+const obj = {
+  num: 1,
+  increment() {
+    setTimeout(() => {
+      this.num++;
+      console.log(this.num);
+    }, 0);
+  },
+};
+obj.increment();
+console.log(obj.num);
+
+//Output:- 1
+// 2
+
+
+
+// 6.
+const person = {
+  name: 'Bob',
+  greet: function() {
+    setTimeout(() => console.log(this.name), 0);
+  },
+};
+const greet = person.greet;
+greet();
+
+//Output:- undefined because not call to object of function and store the variable then call the variable
+
+person.greet();         // direct call hua hain object of function not store the any variable
