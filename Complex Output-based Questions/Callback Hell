@@ -1,0 +1,37 @@
+
+// 1.
+setTimeout(() => {
+  console.log('First');
+  setTimeout(() => {
+    console.log('Second');
+    setTimeout(() => {
+      console.log('Third');
+    }, 100);
+  }, 50);
+}, 0);
+
+//Output:- First
+// Second
+// Third
+
+
+
+// 2.
+function step1(callback) {
+  setTimeout(() => {
+    console.log('Step 1');
+    callback();
+  }, 100);
+}
+function step2(callback) {
+  setTimeout(() => {
+    console.log('Step 2');
+    callback();
+  }, 50);
+}
+step1(() => step2(() => console.log('Done')));
+
+
+//Output:- Step 1
+// Step 2
+// Done
