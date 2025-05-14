@@ -1,0 +1,58 @@
+
+// 1.
+async function foo() {
+  console.log('Start');
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  console.log('End');
+}
+foo();
+console.log('Middle');
+
+//Output:- Start
+// Middle
+// End
+
+
+// 2.
+async function fetchData() {
+  console.log('Fetching');
+  await new Promise((resolve) => setTimeout(resolve, 100));
+  console.log('Done');
+}
+fetchData();
+console.log('Loading');
+
+
+//Output:- Fetching
+// Loading
+// Done
+
+
+// 3.
+async function test() {
+  console.log('1');
+  await Promise.resolve();
+  console.log('2');
+}
+test();
+console.log('3');
+
+
+//Output:- 1
+// 3
+// 2
+
+
+// 4.
+async function asyncTask() {
+  console.log('Task 1');
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  console.log('Task 2');
+}
+asyncTask();
+console.log('Task 3');
+
+
+//Output:- Task 1
+// Task 3
+// Task 2
