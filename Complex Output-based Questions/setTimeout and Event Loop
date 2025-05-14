@@ -1,0 +1,106 @@
+// 1.
+setTimeout(() => console.log('1'), 100); //asynchronous time dependent in 100 mili seond
+setTimeout(() => console.log('2'), 0);  // asynchronous time dependent in 0 milisecond
+console.log('3'); // synchronous that is lifo
+
+//Output:- 3
+// 2
+// 1
+
+
+
+// 2.
+console.log('A');   //  synchronous that is fifo
+setTimeout(() => console.log('B'), 0); //  asynchronous time dependent in 0 milisecond
+setTimeout(() => console.log('C'), 100); //asynchronous time dependent in 100 mili seond
+console.log('D');  // synchronous that is lifo
+
+//Output:- A
+// D
+// B
+// C
+
+
+// 3.
+for (let i = 0; i < 3; i++) {                    
+  setTimeout(() => console.log(i), i * 100);    
+}
+console.log('Done');         
+
+//Output:- Done
+// 0
+// 1
+// 2
+
+
+//4.
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 0);
+}
+
+
+//Output:- 3
+// 3
+// 3
+
+// 5.
+setTimeout(() => console.log('X'), 0);
+Promise.resolve().then(() => console.log('Y'));
+console.log('Z');
+
+
+//Output:- Z
+// Y
+// X
+
+
+// 6.
+console.log('Start');
+setTimeout(() => console.log('Middle'), 0);
+Promise.resolve().then(() => console.log('End'));
+
+//Output:- Start
+// End
+// Middle
+
+
+// 7.
+setTimeout(() => console.log('First'), 0);
+setTimeout(() => {
+  console.log('Second');
+  setTimeout(() => console.log('Third'), 0);
+}, 0);
+
+//Output:- First
+// Second
+// Third
+
+
+// 8.
+function delayLog(msg) {
+  setTimeout(() => console.log(msg), 0);
+}
+delayLog('Hello');
+console.log('World');
+
+//Output:-World
+// Hello
+
+
+// 9.
+setTimeout(() => console.log('A'), 0);
+for (let i = 0; i < 1e6; i++) {}
+console.log('B');
+
+//Output:- B
+// A
+
+
+// 10.
+setTimeout(() => console.log('A'), 10);
+setTimeout(() => console.log('B'), 5);
+setTimeout(() => console.log('C'), 0);
+
+//Output:- C
+// B
+// A
