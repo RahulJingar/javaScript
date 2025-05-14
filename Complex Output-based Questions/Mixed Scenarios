@@ -1,0 +1,42 @@
+
+// 1.
+console.log('Start');
+setTimeout(() => console.log('Timeout 1'), 0);
+Promise.resolve().then(() => console.log('Promise 1'));
+setTimeout(() => console.log('Timeout 2'), 0);
+console.log('End');
+
+//Output:- Start
+// End
+// Promise 1
+// Timeout 1
+// Timeout 2
+
+
+
+// 2.
+console.log('A');
+setTimeout(() => {
+  console.log('B');
+  Promise.resolve().then(() => console.log('C'));
+}, 0);
+console.log('D');
+
+
+//Output:- A
+// D
+// B
+// C
+
+
+// 3.
+function delayedPromise() {
+  return new Promise((resolve) => setTimeout(() => resolve('Done'), 100));
+}
+delayedPromise().then((msg) => console.log(msg));
+console.log('Loading');
+
+//Output:- Loading
+// Done
+
+
