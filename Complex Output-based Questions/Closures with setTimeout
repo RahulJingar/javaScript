@@ -1,0 +1,123 @@
+
+
+// 1.
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+
+//Output:- 0
+// 1
+// 2
+
+
+// 2.
+for (var i = 0; i < 3; i++) {
+  setTimeout((function(i) {
+    return () => console.log(i);
+  })(i), 100);
+}
+
+//Output:- 0
+// 1
+// 2
+
+
+// 3.
+function outer() {
+  let count = 0;
+  setTimeout(() => {
+    count++;
+    console.log(count);
+  }, 0);
+}
+outer();
+
+//Output:- 1
+
+
+
+// 4.
+function makeCounter() {
+  let count = 0;
+  return () => {
+    count++;
+    console.log(count);
+  };
+}
+let counter = makeCounter();
+setTimeout(counter, 100);
+
+
+//Output:- 1
+
+
+// 5.
+function delayMessage(msg, delay) {
+  setTimeout(() => console.log(msg), delay);
+}
+delayMessage('Hello', 0);
+delayMessage('World', 10);
+
+//Output:- Hello
+// World
+
+
+// 6.
+console.log('Start');
+setTimeout(() => console.log('Timeout'), 0);
+Promise.resolve().then(() => console.log('Promise'));
+console.log('End');
+
+//Output:- Start
+// End
+// Promise
+// Timeout
+
+
+// 7.
+setTimeout(() => console.log('A'), 0);
+Promise.resolve().then(() => console.log('B'));
+
+//Output:- B
+// A 
+
+
+// 8.
+new Promise((resolve) => {
+  console.log('1');
+  resolve();
+}).then(() => console.log('2'));
+console.log('3');
+
+//Output:- 1
+// 3
+// 2
+
+
+// 9.
+setTimeout(() => console.log('A'), 0);
+Promise.resolve().then(() => {
+  setTimeout(() => console.log('B'), 0);
+});
+console.log('C');
+
+
+//Output:- C
+// A
+// B
+
+
+// 10.
+console.log('Start');
+setTimeout(() => console.log('Timeout 1'), 0);
+Promise.resolve().then(() => {
+  console.log('Promise');
+  setTimeout(() => console.log('Timeout 2'), 0);
+});
+console.log('End');
+
+//Output:- Start
+// End
+// Promise
+// Timeout 1
+// Timeout 2
