@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form onsubmit="submitHandler(event)">
+    <div>
+         <h1>Uncontrolled Components</h1>
+    <input 
+    type="text"
+    placeholder="enter the name"
+    id="user"
+    >
+    <br><br>
+
+
+    <input 
+    type="text"
+    placeholder="enter password"
+    id="password"
+    >
+
+    <br><br>
+
+
+    <button>Submit</button>
+    </div>
+   </form>
+
+
+</body>
+<script>
+    function submitHandler(event){
+        event.preventDefault();
+        const user =  document.getElementById('user').value
+        const password =  document.getElementById('password').value
+        console.log("user:",user,"password:",password)
+    }
+
+
+</script>
+</html>
