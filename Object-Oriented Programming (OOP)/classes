@@ -1,0 +1,27 @@
+class Human {
+    name="Rahul";
+    weight="54kg";
+    height="5.6 inch"
+
+    Walking(){
+        console.log("I am walking")
+    }
+
+    running(){
+        console.log("I am running")
+    }
+}
+
+let obj = new Human();
+console.log(obj.name)
+console.log(obj.weight)
+console.log(obj.height)
+obj.Walking();
+obj.running();
+
+
+//Output:- Rahul
+// 54kg
+// 5.6 inch
+// I am walking
+// I am running
