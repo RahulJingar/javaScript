@@ -1,0 +1,10 @@
+
+
+
+function solve(value={age:16,wt:50,ht:172}){
+  console.log("Hello Jee",value);
+}
+solve();
+
+
+//Output:- Hello Jee (3) {age: 16, wt: 50, ht: 172}
