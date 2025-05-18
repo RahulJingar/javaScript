@@ -1,0 +1,6 @@
+function solve(value="Rahul"){
+  console.log(value);
+}
+solve(null)
+
+//Output:- null
