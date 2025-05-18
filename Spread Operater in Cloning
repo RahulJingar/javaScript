@@ -1,0 +1,15 @@
+let src = {
+    name:"Rahul",
+    age:"17",
+    city:"jaipur",
+}
+let dest = {...src};
+
+src.age = 19;
+
+console.log(src);   //Main Object
+console.log(dest);  // Spread Operater
+
+
+//Outpur:- {name: 'Rahul', age: 19, city: 'jaipur'}
+// {name: 'Rahul', age: '17', city: 'jaipur'}
