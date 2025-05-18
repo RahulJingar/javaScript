@@ -1,0 +1,10 @@
+ function getAge(){
+  return 50;
+}
+
+function utility(name="Rahul", age=getAge()){
+  console.log(name," ",age)
+}
+utility()
+
+//Output:- Rahul  50
