@@ -1,0 +1,9 @@
+
+console.log(marks);
+console.log("Hello World");
+console.log("Hello jee");
+const marks=98;
+console.log(marks);
+
+//Output :- Temporal Deadzone
+// line number 2,3,4,5 is temporal deadzone
