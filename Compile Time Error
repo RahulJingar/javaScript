@@ -1,0 +1,4 @@
+
+//Compile time error
+//Syntax error
+console.log(1;
