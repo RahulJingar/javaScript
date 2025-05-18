@@ -1,0 +1,57 @@
+
+ console.log(Math.PI);
+
+// //Output:- 3.141592653589793
+
+
+ console.log(Math.max(41,52,63,14,25,36,85));
+
+// //Output:- 85
+
+
+ console.log(Math.min(41,52,63,14,25,36,85));
+
+// //Output:- 14
+
+
+ console.log(Math.round(1.9));
+
+// //Output:- 2
+
+
+
+ console.log(Math.round(1.1));
+
+// //Output:- 1
+
+
+
+ console.log(Math.floor(1.9));
+
+//Output:- 1
+
+
+
+ console.log(Math.floor(1.1));
+
+//Output:- 1
+
+
+
+ console.log(Math.ceil(1.1));
+
+//Output:- 2
+
+
+
+ console.log(Math.ceil(1.9));
+
+//Output:- 2
+
+
+
+console.log(Math.abs(-5));
+
+//Output:- 5
+
+
