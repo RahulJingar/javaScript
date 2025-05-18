@@ -1,0 +1,23 @@
+
+
+let src = {
+    name:"Rahul",
+    age:"17",
+    city:"jaipur",
+}
+
+let src2 = {
+    name:"Manish",
+    age:"25",
+    city:"Ajmer",
+}
+
+let dest = Object.assign({},src,src2);
+
+src.age = 90;
+
+console.log("src:",src);  
+console.log("dest:",dest); 
+
+//Output:- src: {name: 'Rahul', age: 90, city: 'jaipur'}
+// dest: {name: 'Manish', age: '25', city: 'Ajmer'}
