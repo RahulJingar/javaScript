@@ -1,0 +1,4 @@
+
+//run time error
+console.log(x);
+//Output:- ReferenceError: x is not defined
