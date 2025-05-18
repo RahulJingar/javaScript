@@ -1,0 +1,7 @@
+function solve(fName = "Rahul", lName){
+  console.log("Hello Jee",fName," ",lName);
+}
+solve('Rahul',"Jingar");
+
+//Output:- Hello Jee Rahul Jingar
+//First priority in arguments then parameter
