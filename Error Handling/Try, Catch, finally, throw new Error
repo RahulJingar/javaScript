@@ -1,0 +1,90 @@
+1.
+try{    console.log("Hello my name is rahul ji");
+    console.log(x);
+}
+catch(error){
+    console.log("error is here ")
+}
+
+//Output:- Hello my name is rahul ji
+// error is here 
+
+
+2.
+
+try{
+    console.log("chal raha hu bhai pareshan q hote ho");
+    console.log(x);
+}
+catch(error){
+    console.log("error aaye hain ");
+    console.log("error is here",error);
+}
+
+//Output:- C:\Program Files\nodejs\node.exe .\index.js
+// chal raha hu bhai pareshan q hote ho
+// error aaye hain 
+// error is here ReferenceError: x is not defined
+//     at Object.<anonymous> (C:\Users\rahul\Desktop\HTML\index.js:864:17)
+//     at Module._compile (node:internal/modules/cjs/loader:1565:14)
+//     at Object..js (node:internal/modules/cjs/loader:1708:10)
+//     at Module.load (node:internal/modules/cjs/loader:1318:32)
+//     at Function._load (node:internal/modules/cjs/loader:1128:12)
+//     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+//     at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+//     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+//     at node:internal/main/run_main_module:36:49 {stack: 'ReferenceError: x is not defined
+//     at Objec…  at node:internal/main/run_main_module:36:49', message: 'x is not defined'}
+
+
+3.
+try{
+    console.log("try block is here");
+    console.log(x);
+    console.log("try block is end");
+}
+catch{
+    console.log("i am inside catch block");
+    console.log("your error is here:",error);
+}
+finally{
+    console.log("i will run everytime, as i am finally block");
+}
+
+//Output:- 
+try block is here
+i am inside catch block
+i will run everytime, as i am finally block
+Uncaught ReferenceError ReferenceError: error is not defined
+    at <anonymous> (file:///C:/Users/rahul/Desktop/HTML/index.js:868:39)
+    at <anonymous> (node:internal/modules/cjs/loader:1565:14)
+    at <anonymous> (node:internal/modules/cjs/loader:1708:10)
+    at <anonymous> (node:internal/modules/cjs/loader:1318:32)
+    at <anonymous> (node:internal/modules/cjs/loader:1128:12)
+    at traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+    at executeUserEntryPoint (node:internal/modules/run_main:170:5)
+    at <anonymous> (node:internal/main/run_main_module:36:49)
+Process exited with code 1
+
+
+4.
+
+try{
+    console.log(x);
+}
+catch(error){
+    throw new Error("pahle print kro fr throw krna")
+}
+
+//Output:- Uncaught Error Error: pahle print kro fr throw krna
+//     at <anonymous> (file:///C:/Users/rahul/Desktop/HTML/index.js:865:11)
+//     at <anonymous> (node:internal/modules/cjs/loader:1565:14)
+//     at <anonymous> (node:internal/modules/cjs/loader:1708:10)
+//     at <anonymous> (node:internal/modules/cjs/loader:1318:32)
+//     at <anonymous> (node:internal/modules/cjs/loader:1128:12)
+//     at traceSync (node:diagnostics_channel:322:14)
+//     at wrapModuleLoad (node:internal/modules/cjs/loader:219:24)
+//     at executeUserEntryPoint (node:internal/modules/run_main:170:5)
+//     at <anonymous> (node:internal/main/run_main_module:36:49)
+// Process exited with code 1
