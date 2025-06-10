@@ -1,0 +1,11 @@
+function addNumber(){
+    let ans=0;
+    for(let i=0;i<arguments.length;i++){
+        ans = ans + arguments[i];
+    }
+       return ans;
+}
+let res = addNumber(2,5,8,5,8,5);
+ console.log(res);
+
+//Output:- 33
