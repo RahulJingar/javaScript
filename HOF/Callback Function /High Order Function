@@ -1,0 +1,7 @@
+function add(a,b,cb){
+    let result = a + b;
+    cb(result);
+}
+
+add(4,5, (val)=> console.log(val));
+//Output:- 9
