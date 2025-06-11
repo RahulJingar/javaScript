@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentTime</title>
+</head>
+<body>
+    <h1>Current Time :- <span id="clock"></span></h1>
+    <button>Stop</button>
+</body>
+    <script>
+        const clock = document.getElementById('clock');
+        const btn = document.querySelector('button');
+        
+        function currentTime(){
+         const time = new Date();
+         const samay = `${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`;
+        // const samay = time.toLocaleTimeString();
+        clock.innerText = samay;
+       }
+       currentTime();
+       const rukja = setInterval(currentTime,1000);
+
+        btn.addEventListener('click',()=>{
+            clearInterval(rukja);
+        })
+       
+
+    </script>
+</html>
