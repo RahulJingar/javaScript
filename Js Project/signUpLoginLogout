@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- SignUp -->
+    <div>
+        <input type="text" placeholder="Enter Name" class="signupName">
+        <input type="email" placeholder="Enter Email" class="signupEmail">
+        <input type="password" placeholder="Enter Password" class="signupPassword">
+        <button onclick="signUp()">Sign Up</button>
+        <div class="addSignUp"></div>
+    </div>
+    <br><br>
+
+    <!-- Login -->
+     <div>
+        <input type="email" placeholder="Enter Email" class="loginEmail">
+        <input type="password" placeholder="Enter Password" class="loginPassword">
+        <button onclick="login()">login</button>
+        <div class="addLogin"></div>
+     </div>
+     <br><br>
+
+     <!-- logout -->
+      <div>
+        <button onclick="logout()">log Out</button>
+        <div class="addlogout"></div>
+      </div>
+
+</body>
+    <script>
+       const signUp = () => {
+         const signupName = document.getElementsByClassName('signupName')[0].value;
+        const signupEmail = document.getElementsByClassName('signupEmail')[0].value;
+        const signupPassword = document.getElementsByClassName('signupPassword')[0].value;
+
+        const data = {
+            name: signupName,
+            email: signupEmail,
+            password: signupPassword
+        }
+
+        console.log(data);
+       localStorage.setItem('createData',JSON.stringify(data));
+
+       if((signupName && signupEmail && signupPassword)){
+        // alert('full filled')
+        document.getElementsByClassName('addSignUp')[0].textContent = 'user is signUped';
+        document.getElementsByClassName('addSignUp')[0].style.color = 'green';
+       }else{
+        document.getElementsByClassName('addSignUp')[0].textContent = 'required all inputs!!';
+        document.getElementsByClassName('addSignUp')[0].style.color = 'red';
+       }
+    }
+        
+    const login = () => {
+        const loginEmail = document.getElementsByClassName('loginEmail')[0].value;
+        const loginPassword = document.getElementsByClassName('loginPassword')[0].value;
+
+        const data = {
+            email: loginEmail,
+            password: loginPassword
+        }
+        console.log(data);
+       const userData = JSON.parse(localStorage.getItem('createData'));
+       if(userData && userData.email === loginEmail && userData.password === loginPassword){
+        document.getElementsByClassName('addLogin')[0].textContent = 'user is login!!';
+        document.getElementsByClassName('addLogin')[0].style.color = 'green';
+       }else{
+        document.getElementsByClassName('addLogin')[0].textContent = 'please signup first!!';
+        document.getElementsByClassName('addLogin')[0].style.color = 'red';
+       }
+    }
+
+
+    const logout = () => {
+        const logoutData = localStorage.getItem('createData');
+        if(logoutData){
+            localStorage.clear();
+            document.getElementsByClassName('addlogout')[0].textContent = 'logout succssfully';
+            document.getElementsByClassName('addlogout')[0].style.color = 'green';
+        }else{
+            document.getElementsByClassName('addlogout')[0].textContent = 'please signUp first!!';
+            document.getElementsByClassName('addlogout')[0].style.color = 'red'
+        }
+    }
+
+    </script>
+</html>
