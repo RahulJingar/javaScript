@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Current Time: <span id="clock"></span></h1>
+</body>
+    <script>
+        const clock = document.getElementById('clock');
+        function currentTime(){
+            let time = new Date();
+            let hours = time.getHours();
+            let minutes = time.getMinutes();
+            let seconds = time.getSeconds();
+            let periods = 'AM';
+
+            if(hours >= 12){
+                periods = 'PM'
+            }
+
+            const samay = `${hours}:${minutes}:${seconds}:${periods}`
+            clock.innerText = samay;
+        }
+        currentTime()
+        setInterval(currentTime,1000)
+    </script>
+</html>
