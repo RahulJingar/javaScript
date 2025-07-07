@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div  class="bg-zinc-900 h-screen w-full text-white">
+        <h1 class="flex justify-center">API</h1>
+        <div id="parent">
+           
+        </div>
+    </div>
+</body>
+    <script>
+        const parent = document.getElementById('parent');
+        fetch(`https://randomuser.me/api/`)
+        .then(raw=>raw.json())
+        .then(res=>{
+             const {picture, name, email, gender} = res.results[0];
+        parent.innerHTML += ` <div class="p-5 border border-zinc-600 w-1/6">
+                <img class="rounded-full" src="${picture.large}">
+                <h1 class="text-2xl">${name.first}</h1>
+                <h2 class="opacity-60">${email}</h2>
+                <h4 class="opacity-40 mb-8">${gender}</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, rem iure magnam consequuntur numquam dolorum voluptate officiis, doloribus asperiores, nemo aperiam deserunt cupiditate repellat? Ducimus itaque perferendis earum tempora? Vel est quis et. Quos placeat obcaecati id sequi accusantium, aut exercitationem dolore dolorem quas sunt molestias saepe perferendis deleniti ad sapiente dolores porro qui a unde eligendi. Excepturi, corrupti aperiam.</p>
+            </div>`
+        })
+       
+    </script>
+</html>
