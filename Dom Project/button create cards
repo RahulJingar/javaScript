@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-zinc-900 min-h-screen justify-center"> 
+        <h1 class="text-red-500 hover:text-red-900 cursor-pointer flex justify-center mb-5">API URL</h1>
+        <div class="text-white flex justify-center">
+            <button id="btn" class="px-5 mb-8 py-2 rounded-xl hover:bg-green-600 cursor-pointer bg-green-200">click</button>
+          
+        </div>
+
+        <div class="flex gap-5 flex-wrap" id="newUser"></div>
+
+    </div>
+</body>
+    <script>
+        const btn = document.getElementById('btn');
+        const newUser = document.getElementById('newUser');
+
+       function addUser(){
+         fetch(`https://randomuser.me/api/`)
+        .then(raw=>raw.json())
+        .then(result=>{
+            let {name,gender,location,city,state,country,picture} = result.results[0];
+            console.log(result.results[0])
+            newUser.innerHTML = newUser.innerHTML + ` <div class="border rounded-2xl text-white w-1/8 p-5 bg-zinc-600">
+               <img class="bg-red-500 rounded-full" src=${picture.large}>
+             <h1 class="opacity-60">Name: ${name.first}</h1>
+            <h5 class="opacity-50">Gender: ${gender}</h5>
+            <h2>City: ${location.city}</h2>
+            <h4>State: ${location.state}</h4>
+            <h5>Country: ${location.country}</h5>
+           </div>`
+        })
+       }
+
+        btn.addEventListener('click',function(){
+        addUser()
+       })
+
+
+    </script>
+</html>
