@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>AddToCards</title>
+</head>
+<body class="bg-gray-100 text-black transition-all duration-300">
+
+  <div class="p-5">
+    <div class="flex flex-col items-center gap-4 mb-5">
+      <h1 class="text-3xl font-bold">📦 API Products</h1>
+
+      <!-- Search -->
+      <input type="text" id="searchInput" placeholder="Search Product..." class="p-2 w-64 border rounded"/>
+
+      <!-- Category Filter -->
+      <select id="categoryFilter" class="p-2 w-64 border rounded">
+        <option value="all">All Categories</option>
+      </select>
+
+      <!-- Sort -->
+      <select id="sortFilter" class="p-2 w-64 border rounded">
+        <option value="default">Sort By</option>
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+        <option value="ratingHighLow">Rating: High to Low</option>
+      </select>
+
+      <!-- Buttons -->
+      <div class="flex gap-4">
+        <button id="addbtn" class="px-5 py-2 bg-green-500 hover:bg-green-700 text-white rounded-xl">Add Products</button>
+        <button id="removebtn" class="px-5 py-2 bg-red-500 hover:bg-red-700 text-white rounded-xl">Remove All</button>
+        <button id="darkModeToggle" class="px-5 py-2 bg-gray-700 text-white rounded-xl">🌙 Toggle Dark Mode</button>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="fixed top-5 right-5 bg-green-600 text-white py-2 px-4 rounded shadow hidden z-50"></div>
+
+    <!-- Loading -->
+    <div id="loading" class="text-center text-lg font-semibold mt-5 hidden">Loading products...</div>
+
+    <!-- Cards -->
+    <div id="head" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-5"></div>
+  </div>
+
+  <script>
+    const head = document.getElementById("head");
+    const addbtn = document.getElementById("addbtn");
+    const removebtn = document.getElementById("removebtn");
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const sortFilter = document.getElementById("sortFilter");
+    const toast = document.getElementById("toast");
+    const loading = document.getElementById("loading");
+    const darkBtn = document.getElementById("darkModeToggle");
+
+    let allProducts = [];
+
+    const showToast = (msg, color = "bg-green-600") => {
+      toast.textContent = msg;
+      toast.className = `fixed top-5 right-5 py-2 px-4 rounded shadow z-50 text-white ${color}`;
+      toast.classList.remove("hidden");
+      setTimeout(() => toast.classList.add("hidden"), 2000);
+    };
+
+    const renderCards = (products) => {
+      head.innerHTML = "";
+      products.forEach(item => {
+        head.innerHTML += `
+          <div class="border p-4 rounded-xl bg-white shadow-md hover:shadow-lg">
+            <img src="${item.images[0]}" alt="${item.title}" class="w-full h-40 object-cover mb-3 rounded">
+            <h2 class="text-lg font-bold">${item.title}</h2>
+            <p class="text-sm text-gray-600">${item.description.slice(0, 60)}...</p>
+            <p><b>Price:</b> $${item.price} | ⭐ ${item.rating}</p>
+            <p class="text-xs text-gray-500">Category: ${item.category}</p>
+            <button onclick="this.parentElement.remove(); showToast('Removed!', 'bg-red-600')" class="mt-3 w-full bg-red-500 text-white py-1 rounded hover:bg-red-700">Remove</button>
+          </div>
+        `;
+      });
+    };
+
+    const applyFilters = () => {
+      let filtered = [...allProducts];
+
+      const searchText = searchInput.value.toLowerCase();
+      if (searchText) {
+        filtered = filtered.filter(item => item.title.toLowerCase().includes(searchText));
+      }
+
+      const selectedCategory = categoryFilter.value;
+      if (selectedCategory !== "all") {
+        filtered = filtered.filter(item => item.category === selectedCategory);
+      }
+
+      const sortOption = sortFilter.value;
+      if (sortOption === "priceLowHigh") {
+        filtered.sort((a, b) => a.price - b.price);
+      } else if (sortOption === "priceHighLow") {
+        filtered.sort((a, b) => b.price - a.price);
+      } else if (sortOption === "ratingHighLow") {
+        filtered.sort((a, b) => b.rating - a.rating);
+      }
+
+      renderCards(filtered);
+    };
+
+    fetch("https://dummyjson.com/products")
+      .then(res => res.json())
+      .then(res => {
+        allProducts = res.products;
+        loading.classList.add("hidden");
+
+        // Fill category dropdown
+        const categories = [...new Set(allProducts.map(p => p.category))];
+        categories.forEach(cat => {
+          categoryFilter.innerHTML += `<option value="${cat}">${cat}</option>`;
+        });
+
+        // Initial render on load
+        applyFilters();
+
+        // Event Listeners
+        addbtn.addEventListener("click", () => {
+          applyFilters();
+          showToast("Products added!");
+        });
+
+        removebtn.addEventListener("click", () => {
+          head.innerHTML = "";
+          showToast("All removed!", "bg-red-600");
+        });
+
+        searchInput.addEventListener("input", applyFilters);
+        categoryFilter.addEventListener("change", applyFilters);
+        sortFilter.addEventListener("change", applyFilters);
+      })
+      .catch(err => {
+        loading.textContent = "Failed to load products.";
+        console.error("API Error:", err);
+      });
+
+    // Dark mode toggle
+    darkBtn.addEventListener("click", () => {
+      document.documentElement.classList.toggle("dark");
+      document.body.classList.toggle("bg-gray-900");
+      document.body.classList.toggle("text-white");
+    });
+
+    // Show loading initially
+    loading.classList.remove("hidden");
+  </script>
+</body>
+</html>
