@@ -146,3 +146,31 @@ for(i=1;i<=n;i++){
     }
 }
 console.log(`Count Even Numbers:`,count);
+
+/*14. Multiply Array by 2
+Example: [1,2,3] → [2,4,6].*/
+
+let arr = [1,2,3];
+let ans = [];
+for(i=0;i<arr.length;i++){
+    ans.push(arr[i] * 2);
+}
+    console.log(`Multiply:`,ans);
+
+
+/*15. Number Pattern
+Example for n=4:
+1
+1 2
+1 2 3
+1 2 3 4*/
+
+
+let n = 4;
+for(i=1;i<=n;i++){
+let row = "";
+    for(j=1;j<=i;j++){
+        row = row+j+' ';
+    }
+console.log(row);
+}
