@@ -174,3 +174,42 @@ let row = "";
     }
 console.log(row);
 }
+
+
+/*16. Palindrome Check
+Example: isPalindrome("madam") → true.*/
+
+
+let str = "madam";
+let reverse = str.split('').reverse().join('');
+
+if(reverse == str){
+    console.log(true);
+}else{
+    console.log(false)
+}
+
+
+/*17. Factorial (Recursion)
+Example: factorial(5) → 120.*/
+
+let n = 5;
+let fact = 1;
+
+for(i=1; i <= n; i++){
+    fact = fact*i
+}
+console.log(`factorial:`,fact);
+
+
+
+/*19. Array Intersection
+Example: intersection([1,2,3],[2,3,4]) → [2,3].*/
+
+let arr1 = [1, 2, 3];
+let arr2 = [2, 3, 4];
+
+let intersection = arr1.filter(element => arr2.includes(element));
+
+console.log(intersection);
+
