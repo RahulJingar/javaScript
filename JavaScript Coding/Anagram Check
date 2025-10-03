@@ -1,0 +1,10 @@
+/*29. Anagram Check
+Example: "listen","silent" → true.*/
+
+let str1 = "listen";
+let str2 = "silent";
+
+let anagram = str1.split('').sort().join('') == str2.split('').sort().join('');
+console.log(anagram)
+
+//Output:- true
