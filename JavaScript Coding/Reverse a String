@@ -1,0 +1,3 @@
+const str = "Hello";
+const reverseString = str.split("").reverse().join('');
+console.log(`>>>>>>>>reverseString>>>>>>>`,reverseString);
