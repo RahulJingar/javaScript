@@ -1,0 +1,15 @@
+let num = [1,2,2,3];
+let unique = [];
+for(i=0;i<num.length;i++){
+    let duplicate = false;
+    for(j=0;j<unique.length;j++){
+        if(num[i]==unique[j]){
+            duplicate = true;
+        }
+    }
+    if(!duplicate){
+        unique.push(num[i]);
+    }
+}
+
+console.log(unique);
