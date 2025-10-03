@@ -1,0 +1,6 @@
+/*27. Count Words in String
+Example: "The quick brown fox" → 4.*/
+
+let word = "The quick brown fox";
+let str = word.split(' ').length
+console.log(`Count Words in String:`,str);
