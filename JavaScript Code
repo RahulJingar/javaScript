@@ -40,7 +40,7 @@ for(i=0;i<arr.length;i++){
     sum = sum + arr[i];
 }
 
-console.log(`sum:`,sum)
+console.log(`sum:`,sum);
 
 
 // Remove Duplicates
@@ -72,7 +72,7 @@ for(i=0;i<res.length;i++){
         longest = res[i];
     }
 }
-console.log(longest)
+console.log(longest);
 
 
 
@@ -212,4 +212,122 @@ let arr2 = [2, 3, 4];
 let intersection = arr1.filter(element => arr2.includes(element));
 
 console.log(intersection);
+
+
+/*20. Array Difference
+Example: difference([1,2,3],[2,3,4]) → [1].*/
+
+let arr1 = [1,2,3];
+let arr2 = [2,3,4];
+
+let res = arr1.filter(item=>!arr2.includes(item));
+console.log(res);
+
+
+/*21. Flatten Nested Array
+Example: flatten([1,[2,[3,4]],5]) → [1,2,3,4,5].*/
+
+let arr1 = [1,[2,[3,4]],5];
+
+let level1 = arr1.flat();
+// console.log(level1);
+
+let level2 = level1.flat();
+console.log(level2);
+
+
+/*22. Find Missing Number
+Example: [1,2,4,5] → 3.*/
+
+let num = [1,2,4,5];
+for(i=1;i<num.length;i++){
+    if(!num.includes(i)){
+    console.log(i)
+    }
+}
+
+
+/*Second Largest Number
+Example: [1,5,3,9,7] → 7.*/
+
+let num = [1,5,3,9,7];
+num.sort((a,b)=> b-a);
+console.log(`Second largest number:`,num[1]);
+
+/*23. Second Largest Number
+Example: [1,5,3,9,7] → 7.*/
+
+let arr = [1,5,3,9,7];
+let secondLargetNumber = arr.sort((a,b)=>b-a);
+console.log(`second largest number:`,secondLargetNumber[1]);
+
+/*24. Reverse Integer
+Example: reverseInt(1234) → 4321.*/
+
+let num = 1234;
+let reverse = num.toString().split('').reverse().join('');
+console.log(`Reverse Integer`,reverse);
+
+
+/*26. Capitalize Words
+Example: "hello world" → "Hello World".*/
+let word = 'hello world';
+let capital = word.split(' ').map(item=>item.replace(item[0],item[0].toUpperCase())).join(' ');
+
+console.log(`capital:`,capital);
+
+
+/*27. Count Words in String
+Example: "The quick brown fox" → 4.*/
+
+let str = "The quick brown fox";
+let count = str.split(' ').length;
+console.log(`count word in string:`,count);
+
+
+/*29. Anagram Check
+Example: "listen","silent" → true.*/
+
+let str1 = "listen";
+let str2 = "silent";
+
+let anagram = str1.split('').sort().join('') == str2.split('').sort().join('');
+console.log(anagram);
+
+
+
+/*30. Frequency of Array Elements
+Example: [1,2,2,3,3,3] → {1:1,2:2,3:3}.*/
+
+let arr = [1,2,2,3,3,3];
+let freq = {};
+
+for(i=0;i<arr.length;i++){
+    if(freq[arr[i]]){
+        freq[arr[i]] += 1;
+    }else{
+        freq[arr[i]] = 1;
+    }
+}
+
+console.log(freq);
+
+
+//40. Word Frequency in Paragraph
+
+let paragraph = "Hello world hello Hello";
+let words = paragraph.split(' '); 
+let freq = {};
+
+for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (freq[word]) {
+        freq[word] += 1;
+    } else {
+        freq[word] = 1;
+    }
+}
+
+console.log(freq); 
+
 
