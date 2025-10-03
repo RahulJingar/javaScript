@@ -1,0 +1,6 @@
+/*Second Largest Number
+Example: [1,5,3,9,7] → 7.*/
+
+let num = [1,5,3,9,7];
+num.sort((a,b)=> b-a);
+console.log(`Second largest number:`,num[1]);
