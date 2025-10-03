@@ -1,0 +1,6 @@
+/*26. Capitalize Words
+Example: "hello world" → "Hello World".*/
+let word = 'hello world';
+let capital = word.split(' ').map(item=>item.replace(item[0],item[0].toUpperCase())).join(' ');
+
+console.log(`capital:`,capital);
