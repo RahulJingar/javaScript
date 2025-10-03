@@ -1,0 +1,11 @@
+
+let word = ("The quick brown fox");
+let res = word.split(' ');
+let longest = '';
+
+for(i=0;i<res.length;i++){
+    if(res[i].length > longest.length){
+        longest = res[i];
+    }
+}
+console.log(longest);
