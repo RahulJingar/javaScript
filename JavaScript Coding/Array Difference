@@ -1,0 +1,8 @@
+/*20. Array Difference
+Example: difference([1,2,3],[2,3,4]) → [1].*/
+
+let arr1 = [1,2,3];
+let arr2 = [2,3,4];
+
+let res = arr1.filter(item=>!arr2.includes(item));
+console.log(res);
