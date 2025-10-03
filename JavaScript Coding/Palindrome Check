@@ -1,0 +1,9 @@
+
+let str = "madam";
+let reverse = str.split('').reverse().join('');
+
+if(reverse == str){
+    console.log(true);
+}else{
+    console.log(false)
+}
