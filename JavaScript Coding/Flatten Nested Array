@@ -1,0 +1,10 @@
+
+Example: flatten([1,[2,[3,4]],5]) → [1,2,3,4,5].*/
+
+let arr1 = [1,[2,[3,4]],5];
+
+let level1 = arr1.flat();
+// console.log(level1);
+
+let level2 = level1.flat();
+console.log(level2);
