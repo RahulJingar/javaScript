@@ -1,0 +1,9 @@
+/*22. Find Missing Number
+Example: [1,2,4,5] → 3.*/
+
+let num = [1,2,4,5];
+for(i=1;i<num.length;i++){
+    if(!num.includes(i)){
+    console.log(i)
+    }
+}
