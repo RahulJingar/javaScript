@@ -1,0 +1,10 @@
+/*41. Remove Characters Except Alphabets
+Example: "he@ll#o12" → "hello".*/
+
+let str = "he@ll#o12";
+
+let result = str.split('');
+let newStr = result.filter(c => c.toLowerCase() != c.toUpperCase());
+let ans = newStr.join('');
+
+console.log(ans); 
