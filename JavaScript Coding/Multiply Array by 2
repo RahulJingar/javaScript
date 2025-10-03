@@ -1,0 +1,7 @@
+
+let arr = [1,2,3];
+let ans = [];
+for(i=0;i<arr.length;i++){
+    ans.push(arr[i] * 2);
+}
+    console.log(`Multiply:`,ans);
