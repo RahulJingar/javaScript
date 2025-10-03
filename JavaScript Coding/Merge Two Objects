@@ -1,0 +1,6 @@
+
+let obj1 = {a:1};
+let obj2 = {a:2,b:3};
+
+let merge = {...obj1,...obj2};
+console.log(`>>>>>merge>>>>>`,merge);
