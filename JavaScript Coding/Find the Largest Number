@@ -1,0 +1,9 @@
+let num = [1,3,2];
+
+let large = num[0];
+for(i=0;i<num.length;i++){
+    if(num[i]>large){
+        large=num[i];
+    }
+}
+console.log(`>>>>>large>>>>>`,large);
