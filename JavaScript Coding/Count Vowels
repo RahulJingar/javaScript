@@ -1,0 +1,11 @@
+let str = "hello";
+
+let count = 0
+let res = str.split("");
+
+for(i=0;i<res.length;i++){
+    if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u'){
+    count++;
+}
+}
+console.log(`Vowel count:`,count);
