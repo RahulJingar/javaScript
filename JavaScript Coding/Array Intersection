@@ -1,0 +1,7 @@
+
+let arr1 = [1, 2, 3];
+let arr2 = [2, 3, 4];
+
+let intersection = arr1.filter(element => arr2.includes(element));
+
+console.log(intersection);
