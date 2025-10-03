@@ -1,0 +1,6 @@
+/*24. Reverse Integer
+Example: reverseInt(1234) → 4321.*/
+
+let num = 1234;
+let reverse = num.toString().split('').reverse().join('');
+console.log(`Reverse Integer`,reverse);
