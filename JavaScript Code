@@ -73,6 +73,14 @@ for(i=0;i<arr.length;i++){
 }
 console.log(unique)
 
+OR
+
+
+let arr = [1,2,2,3];
+let res = arr.filter((value,index)=>{
+    return arr.indexOf(value) == index;
+})
+console.log(res);
 
 
 //Longest Word
