@@ -1,0 +1,308 @@
+
+
+✅ 1. What is JavaScript?
+JavaScript is an interpreted language used to make more than interactive web pages by user interface. It is a tree-based structure, and 
+it can be very slow if clicking any function, like a button, causes the whole page to refresh.
+
+✅ 2. What is JavaScript Explain the diffrence between var, let and const.?
+var: Declares a function-scoped variable that can be redeclared and reassigned.
+let: Declares a block-scoped variable that can be reassigned but not redeclared.
+const: Declares a block-scoped constant that cannot be reassigned or redeclared.
+
+✅ 3. What are data types in JavaScript?
+JavaScript has 8 data types:
+
+Primitive Types:
+
+String
+Number
+Boolean
+Null
+Undefined
+Symbol (ES6)
+BigInt (ES11)
+Non-Primitive (Reference Type):
+
+Object (includes Arrays, Functions, etc.)
+✅ 4. What is hoisting in JavaScript?
+Hoisting is JavaScript’s behavior of moving declarations to the top of the current scope (function or global).
+
+
+✅ 5. Explain the concept of “undefined” vs. “null”.
+undefined: A variable declared but not assigned any value.
+null: A variable that is clearly set to no value.
+
+✅ 6. What are JavaScript functions, and how do you define them?
+A function is a reusable block of code that performs a specific task.
+
+
+
+✅ 7. What is an Immediately Invoked Function Expression (IIFE)?
+An IIFE is a function that runs immediately after it is defined.
+
+
+✅ 8. What is the purpose of the this keyword?
+this refers to the object that is executing the current function.
+
+In a method: this refers to the object.
+Alone or in a regular function: this is the global object (window in browser).
+In strict mode: this is undefined.
+In arrow functions: this is lexically inherited (from parent scope).
+
+✅ 9. What is scope in JavaScript?
+Scope determines the accessibility (visibility) of variables.
+
+Types:
+
+Global Scope: Accessible everywhere
+Local/Function Scope: Accessible inside functions
+Block Scope (with let/const): Accessible inside {} blocks
+
+✅ 10. Explain closures and how they work.
+A closure is created when a function remembers its outer lexical environment, even after that outer function has finished executing.
+
+
+✅ 11. What is an object in JavaScript?
+An object is a collection of key-value pairs where keys are strings (or Symbols), and values can be any data type, including functions.
+
+
+✅ 12. How do you create an object in JavaScript?
+There are several ways:
+
+Press enter or click to view image in full size
+
+✅ 13. What is the difference between Object.keys() and Object.values()?
+Object.keys(obj) returns an array of the keys of the object.
+Object.values(obj) returns an array of the values of the object.
+
+✅ 14. What is the difference between synchronous and asynchronous JavaScript?
+Synchronous: Code is executed line by line, blocking the execution of the next line until the current line finishes.
+Asynchronous: Code is non-blocking, and execution can continue while waiting for an operation to complete.
+
+✅ 15. What are callbacks, and how do they work?
+A callback is a function passed as an argument to another function, to be called after some operation is done.
+
+Press enter or click to view image in full size
+
+✅ 16. Explain Promises and how they work and Promise.all.
+Promise is a javaScript future result. if success goes to .then if fail goes to .catch and it is two parameter resolve and reject
+
+
+States of a Promise:
+
+Pending: initial state
+Resolved (fulfilled): operation completed successfully
+Rejected: operation failed
+🔸 Promise.all()
+Promise.all() takes an array of promises and returns a single Promise that:
+
+Resolves when all promises succeed
+Rejects if any one fails
+
+✅ 17. What is async/await, and how is it used?
+Async/await is a way to handle asynchronous operations in JavaScript. 
+An async function always returns a Promise, and await pauses execution until that Promise is resolved or rejected. 
+It makes asynchronous code cleaner and more readable, avoiding long .then() chains.
+
+OR
+
+async makes a function that promises to do something later.
+
+await tells the code to wait for that promise to finish before continuing.
+
+OR
+
+You use async to create a function that can run in the background. Inside that function, you use await to pause the code on one line and wait for a task to finish before moving on to the next line.
+
+
+✅ 18. What are arrays in JavaScript?
+Array is a collection of data in JavaScript. It can store multiple values like numbers, strings, objects, or even other arrays in a single variable.
+
+
+✅ 19. How do you iterate over an array?
+There are several ways to loop through an array:
+
+
+✅ 20. What are some common array methods?
+🔹 Mutating methods:
+push() – adds to end
+pop() – removes from end
+shift() – removes from start
+unshift() – adds to start
+splice() – remove/replace/insert at index
+🔹 Non-mutating methods:
+slice(start, end) – returns shallow copy
+map() – transforms each element
+filter() – returns elements that meet condition
+reduce() – reduces to single value
+find() – returns first match
+includes() – checks existence
+
+✅ 21. All Array Method,String,Object Method?
+✅ 21. How do you handle errors in JavaScript?
+JavaScript provides two main ways to handle errors: try…catch and .then().catch(). try…catch is used for synchronous code and is simple to use. .then().catch() is used for Promises in asynchronous code and allows handling errors effectively in async operations.
+
+
+✅ 22. What is the difference between try…catch and Promise error handling?
+try...catch handles errors in synchronous code, while Promise .catch() is used to handle errors in asynchronous code.
+
+
+✅ 23. What are template literals, and how do you use them?
+Template literals use backticks (`) and allow:
+
+Multiline strings
+Embedded expressions using ${}
+
+✅ 24. Explain destructuring assignment.
+Destructuring is a way to unpack values from arrays or objects into variables.
+
+Array destructuring:
+
+Object destructuring:
+
+✅ 25. What are arrow functions, and how do they differ from regular functions?
+Arrow functions are shorter syntax for writing functions and they do not have their own this.
+
+
+✅ 26. What are spread and rest operators?
+Both use the same syntax (...) but behave differently based on context.
+
+🔹 Spread Operator:
+Used to unpack elements of an array or object.
+
+
+🔹 Rest Operator:
+Used to collect remaining values into an array or object.
+
+
+✅ 27. What are JavaScript modules, and why are they used?
+JavaScript modules are files where you write code that can be reused in other files.
+
+
+✅ 29. What is the Document Object Model (DOM)?
+the DOM is a tree-based structure. It allows JavaScript to access and change HTML elements. The page does not refresh automatically when you click a button; it only updates what is needed, which makes the webpage faster if used correctly.
+
+
+✅ 30. What is the difference between == and ===?
+== checks if the values are equal, but === checks both the value and the data type strictly.
+
+✅ 31. Explain the concept of “event loop”.
+The event loop is the mechanism that allows JavaScript to perform non-blocking asynchronous operations, even though it is single-threaded.
+
+How it works:
+1. Executes code from the call stack
+
+2. Handles asynchronous tasks via callback queue (like setTimeout, Promises, etc.)
+
+3. The event loop checks if the call stack is empty, then pushes queued tasks to the stack.
+
+
+✅ 32. What is debouncing?
+Debouncing is a technique used to limit the number of times a function is executed.
+
+✅ Example use case: A search bar should only make API calls after the user stops typing.
+
+
+✅ 33. What are higher-order functions?
+A higher-order function is a function that takes another function as an argument or returns a function.
+
+
+✅ 34. What is the difference between call(), apply(), and bind()?
+🔹 call():
+
+Invokes a function immediately, with a given this value and arguments passed individually.
+
+🔹 apply():
+
+Invokes a function immediately, with a given this value and arguments passed as an array.
+
+🔹 bind():
+
+Returns a new function with a given this value and optional arguments, but does not execute it immediately.
+
+
+✅ 35. What is the difference between setTimeout and setInterval?
+MethodDescription:-
+
+setTimeoutRuns a function once after delaysetIntervalRuns a function repeatedly at intervals
+
+
+✅ 36. What are symbols in JavaScript?
+Symbol is a primitive data type introduced in ES6. It represents a unique identifier.
+
+
+✅ 37. What are pure functions?
+A pure function:
+
+Always returns the same output for the same input
+Has no side effects (does not modify external state)
+
+✅ 38. What is currying, and why is it useful?
+Currying is a technique where a function with multiple arguments is converted into a sequence of functions that each take one argument.
+
+
+✅ Currying is useful for:
+
+Function reuse
+Partial application
+Code readability
+✅ 39. What are JavaScript frameworks/libraries?
+JavaScript frameworks/libraries are tools that help build apps faster and cleaner.
+
+Libraries (help you with specific tasks):
+jQuery
+Lodash
+Chart.js
+Frameworks (provide structure and tools):
+React (library, but often used like a framework)
+Vue.js
+Angular
+Next.js (React-based framework)
+Node.js (for backend)
+✅ 40. Explain the concept of object-oriented programming (OOP) in JavaScript.
+OOP in JavaScript uses objects to model real-world entities. Key concepts:
+
+Classes — Blueprints for creating objects
+Objects — Instances of classes
+Encapsulation — Bundling data with methods
+Inheritance — Reuse properties/methods from another class
+Polymorphism — Same method behaves differently in different objects
+
+✅ 41. What is a regular expression?
+A regular expression (RegEx) is a pattern used to match character combinations in strings.
+
+
+✅ 42. What is the difference between strict mode and non-strict mode in JavaScript?
+🔹 Strict Mode
+Strict mode is a way to run JavaScript with more rules. It makes your code safer by stopping mistakes that JavaScript normally allows.
+
+
+🔹 Non-Strict Mode (Default Mode)
+Non-strict mode is the default way JavaScript runs. It is more flexible but also more risky, because it does not stop many mistakes.
+
+
+✅ 43. What is a constructor function?
+A constructor function is used to create multiple objects with the same structure.
+
+
+✅ 44. How do you implement inheritance in JavaScript?
+There are two ways:
+
+a) Using Prototypes:
+
+b) Using Classes (ES6):
+
+
+✅ 45. Explain the concept of polymorphism in JavaScript.
+Polymorphism means many forms — the same method behaves differently based on the object calling it.
+
+Press enter or click to view image in full size
+
+✅ 46. What is the difference between prototype-based inheritance and class-based inheritance?
+🔹 Prototype-based inheritance:
+
+A style where objects inherit directly from other objects using the prototype chain.
+
+🔹 Class-based inheritance:
+
+A style where classes define blueprints, and objects are created using the class and extends keywords (introduced in ES6).
