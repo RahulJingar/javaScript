@@ -326,12 +326,41 @@ let arr = [1,5,3,9,7];
 let secondLargetNumber = arr.sort((a,b)=>b-a);
 console.log(`second largest number:`,secondLargetNumber[1]);
 
+OR
+
+let arr=[1,5,3,9,7,8];
+let firstLargest=arr[0];
+let secondLargest=arr[0];
+for(i=0;i<arr.length;i++){
+    if(arr[i]>firstLargest){
+        firstLargest=arr[i];
+    }
+}
+console.log(firstLargest);
+
+for(i=0;i<arr.length;i++){
+    if(arr[i]<firstLargest&&arr[i]>secondLargest){
+        secondLargest=arr[i];
+    }
+}
+console.log(secondLargest);
+
 /*24. Reverse Integer
 Example: reverseInt(1234) → 4321.*/
 
 let num = 1234;
 let reverse = num.toString().split('').reverse().join('');
 console.log(`Reverse Integer`,reverse);
+
+OR
+
+let num=1234;
+let str=num.toString();
+let res="";
+for(i=0;i<str.length;i++){
+     res=str[i]+res;
+}
+console.log(res);
 
 
 /*26. Capitalize Words
