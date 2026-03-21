@@ -1,9 +1,0 @@
-// Declare two numbers
-let a = 12;
-let b = 13;
-
-// Calculate sum
-let sum = a + b;
-
-// Print the result
-console.log("Sum:", sum); // Output: Sum: 25
